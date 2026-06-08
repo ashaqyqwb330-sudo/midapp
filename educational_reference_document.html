@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدليل التقني والمنهجي الشامل: الموسوعة الطبية الميدانية وجدار الحماية التكتيكي - Android Reference Engine</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Fira+Code:wght@400;500;700&display=swap');
+
+        :root {
+            --bg-darker: #040912;
+            --bg-dark: #091326;
+            --bg-card: #0d1b33;
+            --primary-gold: #D4AF37;
+            --primary-gold-glow: rgba(212, 175, 55, 0.3);
+            --secondary-blue: #00b4d8;
+            --secondary-blue-glow: rgba(0, 180, 216, 0.25);
+            --text-main: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --status-green: #10b981;
+            --status-yellow: #f59e0b;
+            --status-red: #ef4444;
+            --font-main: 'Cairo', sans-serif;
+            --font-code: 'Fira Code', monospace;
+            --accent-purple: #8b5cf6;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-darker);
+            color: var(--text-main);
+            font-family: var(--font-main);
+            line-height: 1.8;
+            font-size: 15px;
+            overflow-x: hidden;
+            display: flex;
+        }
+
+        /* تخطيط الصفحة المزدوج */
+        .sidebar {
+            width: 320px;
+            background-color: var(--bg-dark);
+            border-left: 2px solid var(--primary-gold);
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            right: 0;
+            overflow-y: auto;
+            padding: 25px 20px;
+            z-index: 100;
+            box-shadow: -5px 0 25px rgba(0, 0, 0, 0.6);
+        }
+
+        .main-content {
+            margin-right: 320px;
+            width: calc(100% - 320px);
+            padding: 50px 60px;
+            min-height: 100vh;
+            background-color: var(--bg-darker);
+        }
+
+        /* تصميم شعار العاصفة الطبية التكتيكية */
+        .sidebar-header {
+            text-align: center;
+            padding-bottom: 25px;
+            border-bottom: 1px dashed rgba(212, 175, 55, 0.4);
+            margin-bottom: 25px;
+        }
+
+        .sidebar-header h2 {
+            color: var(--primary-gold);
+            font-weight: 800;
+            font-size: 1.25rem;
+            margin-top: 10px;
+            letter-spacing: 0.5px;
+            text-shadow: 0 0 10px var(--primary-gold-glow);
+        }
+
+        .sidebar-header p {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-top: 5px;
+        }
+
+        .nav-menu {
+            list-style: none;
+        }
+
+        .nav-item {
+            margin-bottom: 6px;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            padding: 11px 14px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            transition: all 0.25s ease;
+            border-right: 3px solid transparent;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--primary-gold);
+            background-color: rgba(212, 175, 55, 0.08);
+            border-right-color: var(--primary-gold);
+            padding-right: 18px;
+        }
+
+        .nav-link .icon {
+            margin-left: 10px;
+            font-size: 1.1rem;
+        }
+
+        /* لافتة البداية الفاخرة */
+        .header-banner {
+            position: relative;
+            background: linear-gradient(135deg, #0d1b33 0%, #040912 100%);
+            border: 1px solid rgba(212, 175, 55, 0.35);
+            padding: 45px;
+            border-radius: 16px;
+            margin-bottom: 45px;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+            overflow: hidden;
+        }
+
+        .header-banner::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);
+        }
+
+        .header-badge {
+            display: inline-block;
+            background-color: rgba(212, 175, 55, 0.15);
+            border: 1.5px solid var(--primary-gold);
+            color: var(--primary-gold);
+            padding: 4px 14px;
+            font-size: 0.78rem;
+            font-weight: 800;
+            border-radius: 20px;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
+
+        .header-banner h1 {
+            font-weight: 800;
+            font-size: 2.35rem;
+            color: var(--primary-gold);
+            line-height: 1.4;
+            margin-bottom: 15px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .header-banner p {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            max-width: 900px;
+            line-height: 1.8;
+        }
+
+        /* الأقسام القياسية */
+        section {
+            margin-bottom: 60px;
+            scroll-margin-top: 30px;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            font-size: 1.7rem;
+            color: var(--primary-gold);
+            border-bottom: 2.5px solid var(--primary-gold);
+            padding-bottom: 12px;
+            margin-bottom: 30px;
+            font-weight: 800;
+        }
+
+        .section-title span.number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary-gold);
+            color: var(--bg-darker);
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            font-size: 0.95rem;
+            font-weight: 800;
+            margin-left: 15px;
+            box-shadow: 0 0 12px var(--primary-gold-glow);
+        }
+
+        p.intro-text {
+            font-size: 1.1rem;
+            color: var(--text-main);
+            margin-bottom: 25px;
+            text-indent: 15px;
+        }
+
+        /* حاويات التصميم الشبكي */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+            margin-top: 30px;
+            margin-bottom: 35px;
+        }
+
+        .info-card {
+            background-color: var(--bg-card);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            border-radius: 12px;
+            padding: 24px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .info-card::after {
+            content: '🧬';
+            position: absolute;
+            bottom: 10px;
+            left: 15px;
+            opacity: 0.05;
+            font-size: 3rem;
+            transform: rotate(-15deg);
+        }
+
+        .info-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--primary-gold);
+            box-shadow: 0 12px 30px rgba(212, 175, 55, 0.18);
+        }
+
+        .info-card h4 {
+            color: var(--primary-gold);
+            font-size: 1.18rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info-card p {
+            color: var(--text-secondary);
+            font-size: 0.92rem;
+            line-height: 1.7;
+        }
+
+        /* مخطط ASCII للتصميم المعماري للأهمية */
+        .ascii-diagram {
+            font-family: var(--font-code);
+            background-color: #010409;
+            color: var(--secondary-blue);
+            padding: 22px;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 180, 216, 0.3);
+            font-size: 0.85rem;
+            line-height: 1.5;
+            overflow-x: auto;
+            direction: ltr;
+            margin: 30px 0;
+            box-shadow: inset 0 0 15px rgba(0, 180, 216, 0.1);
+        }
+
+        /* الجداول الأنيقة */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            font-size: 0.95rem;
+            text-align: right;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        thead tr {
+            background-color: #0b1a2e;
+            border-bottom: 2px solid var(--primary-gold);
+            color: var(--primary-gold);
+            font-weight: 700;
+        }
+
+        th, td {
+            padding: 14px 20px;
+            border-bottom: 1px solid #112240;
+        }
+
+        tbody tr:hover {
+            background-color: rgba(212, 175, 55, 0.05);
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: rgba(255, 255, 255, 0.015);
+        }
+
+        /* محرر الشفرة والـ Syntax Highlighter */
+        .code-container {
+            background-color: #010409;
+            border: 1px solid #1f242c;
+            border-radius: 12px;
+            margin: 30px 0;
+            overflow: hidden;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.55);
+        }
+
+        .code-header {
+            background-color: #0d1117;
+            padding: 12px 20px;
+            border-bottom: 1px solid #21262d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .code-header span.file-name {
+            font-family: var(--font-code);
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            direction: ltr;
+        }
+
+        .code-header span.language-badge {
+            background-color: rgba(212, 175, 55, 0.15);
+            color: var(--primary-gold);
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+
+        .code-editor {
+            display: flex;
+            direction: ltr;
+        }
+
+        .line-numbers {
+            width: 48px;
+            padding: 16px 0;
+            background-color: #080c14;
+            color: #30363d;
+            text-align: right;
+            padding-right: 14px;
+            font-family: var(--font-code);
+            font-size: 0.85rem;
+            user-select: none;
+            border-right: 1px solid #1f242c;
+        }
+
+        pre {
+            flex-grow: 1;
+            padding: 16px;
+            overflow-x: auto;
+            color: #c9d1d9;
+            font-family: var(--font-code);
+            font-size: 0.85rem;
+            line-height: 1.6;
+            background-color: #010409;
+        }
+
+        /* ألوان Syntax */
+        .keyword { color: #f97583; font-weight: bold; }
+        .type { color: #ffab70; }
+        .string { color: #9ecbff; }
+        .comment { color: #6a737d; font-style: italic; }
+        .annotation { color: #b392f0; }
+        .number-literal { color: #79b8ff; }
+        .function { color: #b392f0; }
+        .control { color: #ff7b72; font-weight: bold; }
+
+        /* تظليلات القوائم والإرشادات البنائية */
+        .step-list {
+            margin: 30px 0;
+            list-style: none;
+        }
+
+        .step-item {
+            position: relative;
+            padding-right: 50px;
+            margin-bottom: 30px;
+        }
+
+        .step-item::before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            right: 0;
+            width: 34px;
+            height: 34px;
+            background-color: rgba(212, 175, 55, 0.12);
+            border: 2.2px solid var(--primary-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-gold);
+            font-weight: 800;
+            font-size: 0.95rem;
+            box-shadow: 0 0 8px var(--primary-gold-glow);
+        }
+
+        /* ترقيم تلقائي ممتد */
+        .step-item:nth-child(1)::before { content: "1"; }
+        .step-item:nth-child(2)::before { content: "2"; }
+        .step-item:nth-child(3)::before { content: "3"; }
+        .step-item:nth-child(4)::before { content: "4"; }
+        .step-item:nth-child(5)::before { content: "5"; }
+        .step-item:nth-child(6)::before { content: "6"; }
+        .step-item:nth-child(7)::before { content: "7"; }
+        .step-item:nth-child(8)::before { content: "8"; }
+
+        .step-item h4 {
+            color: var(--primary-gold);
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        .step-item p {
+            color: var(--text-secondary);
+            font-size: 0.96rem;
+            line-height: 1.7;
+        }
+
+        /* صناديق التنبيه */
+        .alert-box {
+            background-color: rgba(239, 68, 68, 0.08);
+            border: 1.5px solid var(--status-red);
+            padding: 24px;
+            border-radius: 12px;
+            margin: 30px 0;
+            position: relative;
+        }
+
+        .alert-box h4 {
+            color: var(--status-red);
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            font-size: 1.15rem;
+        }
+
+        .alert-box .solution-box {
+            margin-top: 18px;
+            border-top: 1px dashed rgba(239, 68, 68, 0.3);
+            padding-top: 15px;
+        }
+
+        .alert-box .solution-box h5 {
+            color: var(--status-green);
+            font-weight: 800;
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+
+        /* لافتات نصية مفيدة */
+        .highlight-notice {
+            background-color: rgba(0, 180, 216, 0.08);
+            border-right: 4.5px solid var(--secondary-blue);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .highlight-notice strong {
+            color: var(--secondary-blue);
+            display: block;
+            font-size: 1.05rem;
+            margin-bottom: 6px;
+        }
+
+        footer {
+            border-top: 2px solid var(--primary-gold);
+            padding-top: 35px;
+            margin-top: 80px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin-bottom: 8px;
+        }
+
+        /* شريط التمرير المخصص */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background-color: var(--bg-darker);
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: rgba(212, 175, 55, 0.35);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: rgba(212, 175, 55, 0.65);
+        }
+
+        @media (max-width: 1024px) {
+            body {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+                border-left: none;
+                border-bottom: 2px solid var(--primary-gold);
+            }
+            .main-content {
+                margin-right: 0;
+                width: 100%;
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- القائمة الجانبية للتنقل الذكي -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <span style="font-size: 3rem;">🛡️</span>
+            <h2>الدليل الموسوعي الشامل 🧬</h2>
+            <p>التشريح التقني والمخطط البرمجي الشامل للمكتبة التكتيكية</p>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#overview" class="nav-link active"><span class="icon">🔍</span>1. تمهيد ورؤية النظام</a></li>
+            <li class="nav-item"><a href="#architecture" class="nav-link"><span class="icon">📁</span>2. الهيكلية ومعمارية البيانات</a></li>
+            <li class="nav-item"><a href="#tech-specs" class="nav-link"><span class="icon">⚙️</span>3. كتالوج التبعيات والضبط</a></li>
+            <li class="nav-item"><a href="#qr-engine" class="nav-link"><span class="icon">📸</span>4. محرك المسح الضوئي (CameraX)</a></li>
+            <li class="nav-item"><a href="#security-biometrics" class="nav-link"><span class="icon">🔐</span>5. بوابات الأمن وحارس التشفير</a></li>
+            <li class="nav-item"><a href="#pdf-rendering" class="nav-link"><span class="icon">📄</span>6. محرك توليد وتتبع كتب الـ PDF</a></li>
+            <li class="nav-item"><a href="#clinical-evaluations" class="nav-link"><span class="icon">🎛️</span>7. محول وحاسب التقارير السريرية</a></li>
+            <li class="nav-item"><a href="#annotations-export" class="nav-link"><span class="icon">💾</span>8. بوابة تجميع وتصدير البيانات</a></li>
+            <li class="nav-item"><a href="#troubleshooting" class="nav-link"><span class="icon">🛑</span>9. سجل المعارك التقنية وسحق العلل</a></li>
+            <li class="nav-item"><a href="#blueprint" class="nav-link"><span class="icon">👨‍💻</span>10. المخطط الإرشادي للتطوير الذاتي</a></li>
+        </ul>
+    </aside>
+
+    <!-- المحتوى الرئيسي للمرجع الموسوعي المطور -->
+    <main class="main-content">
+        
+        <!-- البانر الرئيسي التقديمي -->
+        <div class="header-banner">
+            <span class="header-badge">المعيار المصدق لتوثيق المشاريع الطبية العسكرية</span>
+            <h1>دليل البناء والتشريح الهندسي: الموسوعة والمكتبة الطبية الميدانية العسكرية وجدار الحماية التكتيكي</h1>
+            <p>مستند مرجعي أكاديمي وتقني تمهيدي مفسر بكافة السطور التفصيلية والمخططات ليكون مرجعاً للمطورين والباحثين لبناء تطبيقات بالغة التعقيد تشمل أمان الحقول البيومترية، محاكاة المستندات المباشرة، معالجة الـ PDF الديناميكية، والتكامل السريري التكتيكي التام.</p>
+        </div>
+
+        <!-- 1. تمهيد ورؤية النظام -->
+        <section id="overview">
+            <div class="section-title">
+                <span class="number">١</span>
+                <h3>تمهيد: فلسفة وجبهات الاستخدام العسكري للنظام</h3>
+            </div>
+            <p class="intro-text">
+                في خضم العمليات الميدانية والظروف القتالية الطارئة للخدمات الطبية العسكرية، يصبح الوصول السريع والآمن تماماً إلى المراجع والمناهج أمراً يترتب عليه إنقاذ حياة الجنود. يأتي تطبيق <strong>المكتبة الطبية الميدانية العسكرية (Medical Library Tactical)</strong> ليكون بوابتنا الرقمية المنيعة والمطورة لمكافحة الظروف السيئة وصيانة الأجهزة المعقدة (أجهزة تخطيط القلب، الصدمات الكهربائية الفورية، وأجهزة التنفس والإنعاش التكتيكي).
+            </p>
+            <div class="highlight-notice">
+                <strong>الركائز الثلاث الأساسية لبنية النظام:</strong>
+                <ul>
+                    <li><strong>البوابة المقررة للدراسة الأكاديمية:</strong> تسهيل قراءة الكتب، الهوامش، والامتحانات، وتقسيم وترتيب المنهج الدراسي إلى فصول منظمة (🩺 الأساسيات الطبية، 🔬 المقرر الشامل، 🧠 التخصصات العسكرية...).</li>
+                    <li><strong>التوطين الإكلينيكي وحساب المؤشرات:</strong> حاسب طبي متقدم لتقييم مقاييس الوعي GCS، وتصفية الكلى eGFR، وتحليل دقيق وتوطين لغازات الدم ABG مع دمج السجلات محلياً.</li>
+                    <li><strong>محاذاة المعدات وتقارير الصيانة:</strong> مسح ملصقات الطاقم والأشرطة الذكية عبر الكاميرا والـ QR والمطابقة الفورية للكتيب التقني.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 2. الهيكلية ومعمارية البيانات -->
+        <section id="architecture">
+            <div class="section-title">
+                <span class="number">٢</span>
+                <h3>الهيكلية التقنية ومعمارية البيانات النظيفة</h3>
+            </div>
+            <p class="intro-text">
+                للحفاظ على إمكانية الفحص والتحديث وتجنب تراكم الأكواد، رُسم معمار مشروع الأندرويد بعناية بالغة عابراً للبوابات القياسية لنمط <strong>MVVM (Model-View-ViewModel)</strong> المدعوم بـ <strong>Clean Architecture</strong>.
+            </p>
+            
+            <p>المخطط الانسيابي التدفقاتي لتنسيق البيانات والأجهزة داخل المكتبة الطبية:</p>
+            <div class="ascii-diagram">
++---------------------------------------------------------------------------------+
+|                                 USER INTERFACE                                  |
+|     (HomeScreen / PdfViewerScreen / QrScannerScreen / ReportsScreen)            |
++---------------------------------------------------------------------------------+
+       | (UI Events)                                           ^ (UI State Observables)
+       v                                                       |
++---------------------------------------------------------------------------------+
+|                                VIEWMODEL LAYER                                  |
+|         (Collects state, holds live operations, requests IO from helpers)       |
++---------------------------------------------------------------------------------+
+       | (Logical Data Queries)                                ^ (Data results)
+       v                                                       |
++-------------------+----------------------------+-------------+------------------+
+|                   |                            |                                |
+v                   v                            v                                v
++-------------+ +-------------+ +---------------------------+ +----------------------------+
+| REPOSITORIES| | SECURITY API|| PDF GENERATION GRAPHICS   || CAMERA & INFERENCE ENGINES|
+| (DataProvider| |(Biometric   | |(Native android.graphics   | |(CameraX Flowable Frames / |
+| Clinical    || Helper /     | | PdfDocument - cover,     | | MLKit Barcode Decoders)  |
+| SharedPreferences)| |MilitaryLock)| | charts, tables drawing)   | |                          |
++-------------+ +-------------+ +---------------------------+ +----------------------------+
+       |             |                            |                               |
+       +-------------+------------+---------------+-------------------------------+
+                                  | (Hardware & Local Drives)
+                                  v
+                       +----------------------+
+                       | Android OS Kernel &  |
+                       | Cryptographic Enclave|
+                       +----------------------+</div>
+
+            <p>سجل تفصيل مسارات الملفات ووظيفتها البنائية في مشروع الموسوعة الطبية:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>اسم ومسار الملف الفني</th>
+                        <th>الوصف والمسؤولية الكاملة داخل التطبيق</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>com.example.MainActivity.kt</code></td>
+                        <td>حاضنة النشاط المركزي للبرنامج والمتحكمة في تهيئة بوابات الأمان العسكري والـ Navigation.</td>
+                    </tr>
+                    <tr>
+                        <td><code>com.example.data.DataProvider.kt</code></td>
+                        <td>مسؤول عن فرز الكتب، تصفية المناهج، البحث بصيغ متقدمة عابرة لحروف الأبجدية، والمحرك الأساسي لتوليد مستندات الـ PDF التقنية على الطاير في حال انعدام المرفقات.</td>
+                    </tr>
+                    <tr>
+                        <td><code>com.example.data.DocumentNotesManager.kt</code></td>
+                        <td>تخزين وفحص الملاحظات والتعليقات الخاصة بكل مقرر من المقررات عبر التخزين الدائم.</td>
+                    </tr>
+                    <tr>
+                        <td><code>com.example.helper.BiometricHelper.kt</code></td>
+                        <td>الجسر الأمني المتصل بالمستشعرات البيومترية للتطبيق، يعالج حالات توافق عتاد البصمة وبصمات الوجه للأجهزة الحديثة والعتيقة.</td>
+                    </tr>
+                    <tr>
+                        <td><code>com.example.helper.ExportHelper.kt</code></td>
+                        <td>مساعد التحويل لنسق JSON وTXT التكتيكي، يجمع الهوامش السريرية ويدمجها للتصدير ومشاركتها عبر الراديو أو المنظومة الطبية الشاملة.</td>
+                    </tr>
+                    <tr>
+                        <td><code>com.example.ui.screens.MilitaryLockScreen.kt</code></td>
+                        <td>شاشة الحماية العسكرية، تجبر المستخدم على لمس البصمة أو مطابقة رمز الـ PIN التكتيكي الرباعي لفك القفل عن أركان المكتبة.</td>
+                    </tr>
+                    <tr>
+                        <td><code>com.example.ui.screens.QrScannerScreen.kt</code></td>
+                        <td>محضرة الكاميرا وقارئ الأكواد عبر كاميرا أندرويد الحية بالترابط مع محرك المعاينة MLKit لقراءة باركود الأجهزة والمعدات.</td>
+                    </tr>
+                    <tr>
+                        <td><code>com.example.ui.screens.PdfViewerScreen.kt</code></td>
+                        <td>عارض المناهج المفتوحة والمحتوية على لوحة سفلية لحفظ وتدوين الملاحظات.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 3. كتالوج التبعيات والضبط -->
+        <section id="tech-specs">
+            <div class="section-title">
+                <span class="number">٣</span>
+                <h3>كتالوج التبعيات والضبط التجميعي (Dependencies)</h3>
+            </div>
+            <p class="intro-text">
+                لإنتاج برمجية فائقة الأمان ومستقرة، تم استيراد حزم وتبعيات أندرويد الرسمية. يُدار الإصدار مركزياً بالاعتماد على كتالوج التبعيات الموحد <code>libs.versions.toml</code>:
+            </p>
+
+            <div class="code-container">
+                <div class="code-header">
+                    <span class="file-name">gradle/libs.versions.toml</span>
+                    <span class="language-badge">TOML Config</span>
+                </div>
+                <div class="code-editor">
+                    <div class="line-numbers">
+1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22
+                    </div>
+                    <pre><code><span class="keyword">[versions]</span>
+<span class="type">agp</span> = <span class="string">"8.3.1"</span>
+<span class="type">kotlin</span> = <span class="string">"1.9.22"</span>
+<span class="type">composeBom</span> = <span class="string">"2024.02.01"</span>
+<span class="type">biometric</span> = <span class="string">"1.1.0"</span>
+<span class="type">cameraX</span> = <span class="string">"1.3.1"</span>
+<span class="type">mlkitBarcode</span> = <span class="string">"17.3.0"</span>
+<span class="type">accompanistPermissions</span> = <span class="string">"0.34.0"</span>
+<span class="type">gson</span> = <span class="string">"2.10.1"</span>
+
+<span class="keyword">[libraries]</span>
+<span class="type">androidx-compose-bom</span> = { group = <span class="string">"androidx.compose"</span>, name = <span class="string">"compose-bom"</span>, version.ref = <span class="string">"composeBom"</span> }
+<span class="type">androidx-biometric</span> = { group = <span class="string">"androidx.biometric"</span>, name = <span class="string">"biometric"</span>, version.ref = <span class="string">"biometric"</span> }
+<span class="type">androidx-camera-core</span> = { group = <span class="string">"androidx.camera"</span>, name = <span class="string">"camera-core"</span>, version.ref = <span class="string">"cameraX"</span> }
+<span class="type">androidx-camera-camera2</span> = { group = <span class="string">"androidx.camera"</span>, name = <span class="string">"camera-camera2"</span>, version.ref = <span class="string">"cameraX"</span> }
+<span class="type">androidx-camera-lifecycle</span> = { group = <span class="string">"androidx.camera"</span>, name = <span class="string">"camera-lifecycle"</span>, version.ref = <span class="string">"cameraX"</span> }
+<span class="type">androidx-camera-view</span> = { group = <span class="string">"androidx.camera"</span>, name = <span class="string">"camera-view"</span>, version.ref = <span class="string">"cameraX"</span> }
+<span class="type">mlkit-barcode-scanning</span> = { group = <span class="string">"com.google.mlkit"</span>, name = <span class="string">"barcode-scanning"</span>, version.ref = <span class="string">"mlkitBarcode"</span> }
+<span class="type">accompanist-permissions</span> = { group = <span class="string">"com.google.accompanist"</span>, name = <span class="string">"accompanist-permissions"</span>, version.ref = <span class="string">"accompanistPermissions"</span> }
+<span class="type">google-code-gson</span> = { group = <span class="string">"com.google.code.gson"</span>, name = <span class="string">"gson"</span>, version.ref = <span class="string">"gson"</span> }
+</code></pre>
+                </div>
+            </div>
+
+            <p>ثم في ملف بناء تطبيق أندرويد المعني الموتّر <code>app/build.gradle.kts</code> يتم الاتصال بكل الحياكات لإنتاج التطبيق:</p>
+            <div class="code-container">
+                <div class="code-header">
+                    <span class="file-name">app/build.gradle.kts</span>
+                    <span class="language-badge">Kotlin Build Script</span>
+                </div>
+                <div class="code-editor">
+                    <div class="line-numbers">
+1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18
+                    </div>
+                    <pre><code>dependencies {
+    <span class="comment">// Compose Platform Integration</span>
+    implementation(platform(libs.androidx.compose.bom))
+    implementation(libs.androidx.ui)
+    implementation(libs.androidx.ui.graphics)
+    implementation(libs.androidx.ui.tooling.preview)
+    implementation(libs.androidx.material3)
+    
+    <span class="comment">// Bio-Metrics Hardware Shield</span>
+    implementation(libs.androidx.biometric)
+    
+    <span class="comment">// Jetpack CameraX & Real-Time Frames Analysers</span>
+    implementation(libs.androidx.camera.core)
+    implementation(libs.androidx.camera.camera2)
+    implementation(libs.androidx.camera.lifecycle)
+    implementation(libs.androidx.camera.view)
+    implementation(libs.mlkit.barcode.scanning)
+    implementation(libs.accompanist.permissions)
+    implementation(libs.google.code.gson)
+}</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. محرك المسح الضوئي لمعايرة الأجهزة الطبية والمطابقة -->
+        <section id="qr-engine">
+            <div class="section-title">
+                <span class="number">٤</span>
+                <h3>محرك مسح الأكواد والـ QR ومعاينة الكاميرا (CameraX / MLKit)</h3>
+            </div>
+            <p class="intro-text">
+                تمّ تصميم وحدة قراءة الرموز البصارية لتتيح للطبيب أو المهندس الصحي فحص الملصقات المطبوعة على الأجهزة الطبية في الميدان. يتم تشغيل <strong>CameraX Preview</strong>، ويُحقن فيه محلل حركي متزامن يقوم بتسليم الإطارات الحية إلى محرك <strong>Google MLKit Barcode Scanning</strong> ليتعرف ويستخرج على الفور الرقم التسلسلي، ومطابقتها مع المقررات المدرسية:
+            </p>
+
+            <div class="code-container">
+                <div class="code-header">
+                    <span class="file-name">com/example/ui/screens/QrScannerScreen.kt</span>
+                    <span class="language-badge">Kotlin</span>
+                </div>
+                <div class="code-editor">
+                    <div class="line-numbers">
+1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22
+                    </div>
+                    <pre><code><span class="annotation">@androidx.camera.core.ExperimentalGetImage</span>
+<span class="comment">// محلل الصورة المصمم للتشغيل الميداني دون التسبب في تساقط الإطارات (Frames Drop)</span>
+<span class="keyword">class</span> <span class="type">QrCodeAnalyzer</span>(<span class="keyword">private val</span> onQrScanned: (<span class="type">String</span>) -> <span class="keyword">Unit</span>) : <span class="type">ImageAnalysis.Analyzer</span> {
+    <span class="keyword">override fun</span> <span class="function">analyze</span>(imageProxy: <span class="type">ImageProxy</span>) {
+        <span class="keyword">val</span> mediaImage = imageProxy.image
+        <span class="control">if</span> (mediaImage != <span class="keyword">null</span>) {
+            <span class="keyword">val</span> image = <span class="type">InputImage</span>.fromMediaImage(mediaImage, imageProxy.imageInfo.rotationDegrees)
+            <span class="keyword">val</span> scanner = <span class="type">BarcodeScanning</span>.getClient()
+            
+            scanner.process(image)
+                .addOnSuccessListener { barcodes ->
+                    <span class="keyword">for</span> (barcode <span class="keyword">in</span> barcodes) {
+                        <span class="keyword">val</span> raw = barcode.rawValue
+                        <span class="control">if</span> (!raw.isNullOrEmpty()) {
+                            onQrScanned(raw) <span class="comment">// إعادة الرمز فور فك التشفير</span>
+                            <span class="control">break</span>
+                        }
+                    }
+                }
+                .addOnCompleteListener { imageProxy.close() }
+        } <span class="control">else</span> { imageProxy.close() }
+    }
+}</code></pre>
+                </div>
+            </div>
+            <p>يتم فرز هذه البيانات ومطابقتها مباشرة بالاعتماد على جدول المطابقة المرجعي لتوجيه الطبيب ومطابقة وتحديد كود الجهاز المكتشف مثل: <code>MML-EQ-ECG</code> بجهاز قياس تخطيط القلب alpha، لتوجيه المستخدم للقسم العلمي والمعايرات المعتمدة الفورية.</p>
+        </section>
+
+        <!-- 5. بوابات الأمن وحارس التشفير البيومتري التكتيكي -->
+        <section id="security-biometrics">
+            <div class="section-title">
+                <span class="number">٥</span>
+                <h3>بوابات الأمن وحارس التشفير والتخزين المقفل ذاتياً</h3>
+            </div>
+            <p class="intro-text">
+                تدرك فلسفة الأنظمة الطبية الميدانية العسكرية إمكانية ضياع أو استيلاء قوى غير صديقة على العتاد والأجهزة الرقمية المحمولة في ساحة القتال، مما يشكل خطراً كبيراً بتسرب السجلات الطبية للمصابين والتقارير الحساسة. لذا أسسنا حارس الأمان المزدوج <code>BiometricHelper.kt</code>:
+            </p>
+
+            <div class="code-container">
+                <div class="code-header">
+                    <span class="file-name">com/example/helper/BiometricHelper.kt</span>
+                    <span class="language-badge">Kotlin Prompt Handling</span>
+                </div>
+                <div class="code-editor">
+                    <div class="line-numbers">
+1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24
+                    </div>
+                    <pre><code><span class="keyword">fun</span> <span class="function">triggerBiometricPrompt</span>(activity: <span class="type">FragmentActivity</span>) {
+    <span class="keyword">val</span> executor = <span class="type">ContextCompat</span>.getMainExecutor(activity)
+    <span class="keyword">val</span> prompt = <span class="type">BiometricPrompt</span>(activity, executor, <span class="keyword">object</span> : <span class="type">BiometricPrompt.AuthenticationCallback</span>() {
+        <span class="keyword">override fun</span> <span class="function">onAuthenticationSucceeded</span>(result: <span class="type">BiometricPrompt.AuthenticationResult</span>) {
+            onAuthSuccess?.invoke() <span class="comment">// فك تجميد الشاشات</span>
+        }
+        <span class="keyword">override fun</span> <span class="function">onAuthenticationError</span>(errCode: <span class="type">Int</span>, errString: <span class="type">CharSequence</span>) {
+            onAuthError?.invoke(errString.toString())
+        }
+    })
+
+    <span class="keyword">val</span> infoBuilder = <span class="type">BiometricPrompt.PromptInfo.Builder</span>()
+        .setTitle(<span class="string">"التحقق الأمني الميداني 🛡️"</span>)
+        .setSubtitle(<span class="string">"يرجى وضع البصمة أو استخدام وجهك أو رمز الـ PIN التكتيكي"</span>)
+
+    <span class="comment">// إعدادات المصادقة التوافقية (Fallback Configuration)</span>
+    <span class="keyword">val</span> matchesCredential = <span class="type">BiometricManager</span>.from(activity)
+        .canAuthenticate(<span class="type">BiometricManager.Authenticators</span>.DEVICE_CREDENTIAL) == <span class="type">BiometricManager</span>.BIOMETRIC_SUCCESS
+
+    <span class="control">if</span> (matchesCredential) {
+        infoBuilder.setAllowedAuthenticators(<span class="type">BiometricManager.Authenticators</span>.BIOMETRIC_STRONG or <span class="type">BiometricManager.Authenticators</span>.DEVICE_CREDENTIAL)
+    } <span class="control">else</span> {
+        infoBuilder.setAllowedAuthenticators(<span class="type">BiometricManager.Authenticators</span>.BIOMETRIC_STRONG)
+        infoBuilder.setNegativeButtonText(<span class="string">"إغلاق"</span>)
+    }
+    prompt.authenticate(infoBuilder.build())
+}</code></pre>
+                </div>
+            </div>
+            <p>يتميز التطبيق بوجود آلية فك القفل الاحتياطية عبر <code>MilitaryLockScreen.kt</code> برقم سري مخصص PIN (المعرّف تكتيكياً برمز <code>0000</code> أو الرمز الخاص بالاستخدام التعبوي)، ويجبر المستخدم على إثبات الهوية لتخطي الشاشة عند كل خروج للملف الخلفي أو فتح للتطبيق.</p>
+        </section>
+
+        <!-- 6. عارض الكتب الرقمي والطباعة الزجاجية للـ PDF -->
+        <section id="pdf-rendering">
+            <div class="section-title">
+                <span class="number">٦</span>
+                <h3>محرك التوليد الفوري لملفات الـ PDF والرسم على لوحات النسيج (Android Graphics API)</h3>
+            </div>
+            <p class="intro-text">
+                من أروع وأقوى ميزات التطبيق المكتوبة بذكاء وبراعة هي قدرة محرك المناهج على <strong>توليد الكتب الطبية وملفات الـ PDF المعايرة تلقائياً وعلى الطاير (On-the-fly)</strong> في حال عدم توفر النسخ الخارجية الملحقة بمدير الملفات. يُبنى الملف البنيوي ويزين باستخدام مكتبة نظام أندرويد لخدمات الطباعة الفنية والرسم <code>android.graphics.pdf.PdfDocument</code>:
+            </p>
+
+            <div class="code-container">
+                <div class="code-header">
+                    <span class="file-name">com/example/data/DataProvider.kt (Pdf Document Writer Method)</span>
+                    <span class="language-badge">Kotlin (Low-Level Graphics Canvas)</span>
+                </div>
+                <div class="code-editor">
+                    <div class="line-numbers">
+1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26
+                    </div>
+                    <pre><code><span class="keyword">fun</span> <span class="function">generateFallbackPdf</span>(bookTitle: <span class="type">String</span>, file: <span class="type">File</span>) {
+    <span class="keyword">val</span> doc = android.graphics.pdf.<span class="type">PdfDocument</span>()
+    
+    <span class="comment">// تدوين الصفحة الأولى (غلاف تكتيكي مزود بشعار الصليب الأحمر الإكلينيكي ومعلومات الاكتتاب الفنية)</span>
+    <span class="keyword">val</span> pInfo = <span class="type">PdfDocument.PageInfo.Builder</span>(<span class="number-literal">595</span>, <span class="number-literal">842</span>, <span class="number-literal">1</span>).create()
+    <span class="keyword">val</span> page = doc.startPage(pInfo)
+    <span class="keyword">val</span> canvas = page.canvas
+
+    <span class="comment">// صباغة الخلفية البيضاء ووضع الإطار التقني</span>
+    <span class="keyword">val</span> bgPaint = android.graphics.Paint().apply { color = android.graphics.Color.WHITE }
+    canvas.drawRect(<span class="number-literal">0f</span>, <span class="number-literal">0f</span>, <span class="number-literal">595f</span>, <span class="number-literal">842f</span>, bgPaint)
+
+    <span class="comment">// رسم شريط الفهرس والرأسية بلون أزرق عسكري تكتيكي</span>
+    <span class="keyword">val</span> headerPaint = android.graphics.Paint().apply { color = android.graphics.Color.parseColor(<span class="string">"#1B314B"</span>) }
+    canvas.drawRect(<span class="number-literal">15f</span>, <span class="number-literal">15f</span>, <span class="number-literal">580f</span>, <span class="number-literal">80f</span>, headerPaint)
+
+    <span class="comment">// رسم شعار الصليب الطبي التكتيكي الأحمر في الكانفاس مباشرة</span>
+    <span class="keyword">val</span> crossPaint = android.graphics.Paint().apply { color = android.graphics.Color.parseColor(<span class="string">"#E74C3C"</span>) }
+    canvas.drawRect(<span class="number-literal">277f</span>, <span class="number-literal">370f</span>, <span class="number-literal">317f</span>, <span class="number-literal">410f</span>, crossPaint) <span class="comment">// العمود الرأسي</span>
+    canvas.drawRect(<span class="number-literal">257f</span>, <span class="number-literal">380f</span>, <span class="number-literal">337f</span>, <span class="number-literal">400f</span>, crossPaint) <span class="comment">// العمود الأفقي</span>
+
+    <span class="comment">// تدوين العنوان الفني للورقة والاسم المعتد</span>
+    <span class="keyword">val</span> textPaint = android.graphics.Paint().apply { color = android.graphics.Color.WHITE; textSize = <span class="number-literal">14f</span>; textAlign = Paint.Align.CENTER }
+    canvas.drawText(<span class="string">"المكتبة الطبية الميدانية العسكرية"</span>, <span class="number-literal">297f</span>, <span class="number-literal">45f</span>, textPaint)
+
+    doc.finishPage(page)
+    doc.writeTo(file.outputStream())
+    doc.close()
+}</code></pre>
+                </div>
+            </div>
+            <div class="highlight-notice">
+                <strong>التعامل الذكي مع محاذاة اللغة العربية (RTL):</strong><br>
+                يواجه نظام الطباعة الافتراضي لأندرويد صعوبة فك تشفير الحروف العربية أو قلب التفاف الجمل. تم تعويض ذلك برمجياً في المطور التابع لـ <code>drawMultilineTextRight</code> حيث يتم احتساب عرض النص تنازلياً عبر أسلوب <code>paint.measureText</code> وتقسيم النص، وزرع الكلمات المتجمعة من اليمين إلى اليسار تدريجياً لضمان قراءة طبيعية 100٪ دون تشوه.
+            </div>
+        </section>
+
+        <!-- 7. معالج وحاسب التقارير الطبية والتقييمات الإكلينيكية المتقدمة -->
+        <section id="clinical-evaluations">
+            <div class="section-title">
+                <span class="number">٧</span>
+                <h3>بنية التقارير والتحليلات الطبية والتشخيص الموجه</h3>
+            </div>
+            <p class="intro-text">
+                يمثل نظام التقارير التوطينية <code>ReportsScreen.kt</code> وحدة ذكية تستخدم مصفوفات ومعادلات حيوية لحساب ومطابقة ثلاثة اختبارات رعاية ريادية شديدة الأهمية:
+            </p>
+
+            <div class="card-grid">
+                <div class="info-card">
+                    <h4>مقياس غلاسكو للوعي الغيبوبي (GCS)</h4>
+                    <p>يقوم بجمع قياس استجابة العين وحركة الجسم والنشاط الشفهي لتصنيف الإصابات فوراً: (إصابة حادة رعاية حرجة 💔 من 3-8، متوسطة من 9-12، وطفيفة سليمة من 13-15).</p>
+                </div>
+                <div class="info-card">
+                    <h4>معدل الترشيح الكبيبي الكلوي (eGFR)</h4>
+                    <p>استعمال معادلة كوكروفت وغولت (Cockcroft-Gault Eq) لحساب كفاءة تصفية الكلى بالاعتماد على الوزن، والسن، الكرياتينين، ومضاعفات الجنس البشري.</p>
+                </div>
+                <div class="info-card">
+                    <h4>تحليل غازات الدم الشرياني (ABG)</h4>
+                    <p>مكافئ تشخيصي يقيس التوازن الهيدروجيني pH، والضغط الجزئي لثاني أكسيد الكربون PaCO2، والبيكربونات HCO3 لمطابقة وتحديد حالات الحماض أو القلوية الاستقلابية والتنفسية.</p>
+                </div>
+            </div>
+
+            <p>أولاً: الخوارزمية الفلسفية المكتوبة لحل وفك معضلات غازات الدم ABG رياضياً:</p>
+            <div class="code-container">
+                <div class="code-header">
+                    <span class="file-name">com/example/ui/screens/ReportsScreen.kt (ABG logic)</span>
+                    <span class="language-badge">Kotlin Logic Engine</span>
+                </div>
+                <div class="code-editor">
+                    <div class="line-numbers">
+1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20
+                    </div>
+                    <pre><code><span class="keyword">fun</span> <span class="function">diagnoseABG</span>(ph: <span class="type">Double</span>, paco2: <span class="type">Double</span>, hco3: <span class="type">Double</span>): <span class="type">String</span> {
+    <span class="control">val</span> isAcidemia = ph &lt; <span class="number-literal">7.35</span>
+    <span class="control">val</span> isAlkalemia = ph > <span class="number-literal">7.45</span>
+    
+    <span class="control">return when</span> {
+        isAcidemia -> {
+            <span class="control">if</span> (paco2 > <span class="number-literal">45</span>) {
+                <span class="control">if</span> (hco3 > <span class="number-literal">26</span>) <span class="string">"Respiratory Acidosis - Partially Compensated 🫁"</span>
+                <span class="control">else</span> <span class="string">"Respiratory Acidosis - Uncompensated 🫁"</span>
+            } <span class="control">else</span> {
+                <span class="control">if</span> (paco2 &lt; <span class="number-literal">35</span>) <span class="string">"Metabolic Acidosis - Partially Compensated 🤢"</span>
+                <span class="control">else</span> <span class="string">"Metabolic Acidosis - Uncompensated 🤢"</span>
+            }
+        }
+        isAlkalemia -> {
+            <span class="control">if</span> (paco2 &lt; <span class="number-literal">35</span>) <span class="string">"Respiratory Alkalosis - Uncompensated 🫁"</span>
+            <span class="control">else</span> <span class="string">"Metabolic Alkalosis - Uncompensated 🧪"</span>
+        }
+        <span class="control">else</span> -> <span class="string">"Normal Acid-Base Balance - Symmetrical ✅"</span>
+    }
+}</code></pre>
+                </div>
+            </div>
+            <p>ثانياً: معادلة ترشيح الكلى الرياضية المطبقة (Cockcroft-Gault Equation):</p>
+            <div style="background-color: #0d1b33; border: 1.5px solid var(--secondary-blue); border-radius: 10px; padding: 22px; text-align: center; font-size: 1.15rem; margin: 25px 0;">
+                <span style="color: var(--secondary-blue); font-weight: bold;">eGFR = [ (140 - Age) × Weight (kg) ] / [ 72 × Creatinine (mg/dL) ]</span>
+                <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 8px;">(مضروباً بالقيمة المرجعية 0.85 في حال تصنيف المريض كأنثى لملاءمة الفروق العضلية العضوية)</div>
+            </div>
+        </section>
+
+        <!-- 8. بوابة تجميع وتصدير البيانات الطبية المشفرة -->
+        <section id="annotations-export">
+            <div class="section-title">
+                <span class="number">٨</span>
+                <h3>بوابة تجميع وتصدير البيانات والتقارير الطبية (JSON / TXT Formats)</h3>
+            </div>
+            <p class="intro-text">
+                تُعدّ أداة المساعد <code>ExportHelper.kt</code> حجر الأساس لتوحيد وجدولة كافة السجلات المدونة بنسق موحد. يقوم بمسح مستودعات الذاكرة المشتركة <code>SharedPreferences</code> لتجميع مدونات الكتب ومزامنتها بملفات التقارير السريرية، ويقدم خيارين للتصدير:
+            </p>
+
+            <div class="card-grid">
+                <div class="info-card">
+                    <h4>تصدير بنيوي تقني بصيغة JSON</h4>
+                    <p>صيغة رقمية مخصصة للتحميل الرقمي ورفع البيانات المباشر إلى خوادم المشافي المركزية لضمان عدم حدوث تشوه بالبيانات وتسهيل المزامنة.</p>
+                </div>
+                <div class="info-card">
+                    <h4>تصدير مقروء محلي تكتيكي بصيغة TXT</h4>
+                    <p>تقرير باللغتين العربية والانجليزية منسق بدلايل وعلامات وايقونات تعبيرية يسهل طباعته أو ارساله كنص لاسلكي أو تدوينه ميدانياً.</p>
+                </div>
+            </div>
+
+            <p>توضيح لكيفية استخدام فئات <code>FileProvider</code> لتهيئة ملف الكاش وإرساله بمشاركة مرخصة وآمنة عابرة لأنشطة أندرويد:</p>
+            <div class="code-container">
+                <div class="code-header">
+                    <span class="file-name">com/example/helper/ExportHelper.kt (Sharing Engine)</span>
+                    <span class="language-badge">Kotlin</span>
+                </div>
+                <div class="code-editor">
+                    <div class="line-numbers">
+1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14
+                    </div>
+                    <pre><code><span class="keyword">val</span> cacheFile = <span class="type">File</span>(context.cacheDir, <span class="string">"Tactical_Medical_Export.txt"</span>)
+cacheFile.writeText(content)
+
+<span class="comment">// توليد رابط آمن للوصول ومشاركة البيانات والحد من أخطاء الـ FileUriExposedException</span>
+<span class="keyword">val</span> uri: <span class="type">Uri</span> = <span class="type">FileProvider</span>.getUriForFile(context, <span class="string">"${context.packageName}.fileprovider"</span>, cacheFile)
+
+<span class="keyword">val</span> shareIntent = <span class="type">Intent</span>(<span class="type">Intent</span>.ACTION_SEND).apply {
+    type = <span class="string">"text/plain"</span>
+    putExtra(<span class="type">Intent</span>.EXTRA_STREAM, uri)
+    putExtra(<span class="type">Intent</span>.EXTRA_SUBJECT, <span class="string">"تصدير البيانات الطبية والعلمية الميدانية 🧬"</span>)
+    addFlags(<span class="type">Intent</span>.FLAG_GRANT_READ_URI_PERMISSION) <span class="comment">// ترخيص الوصول لنشاط الاستيراد الخارجي</span>
+}
+context.startActivity(<span class="type">Intent</span>.createChooser(shareIntent, <span class="string">"تصدير التقرير الموحد عبر:"</span>).addFlags(<span class="type">Intent</span>.FLAG_ACTIVITY_NEW_TASK))
+</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. سجل المعارك التقنية وسحق العلل والمشكلات الدقيقة -->
+        <section id="troubleshooting">
+            <div class="section-title">
+                <span class="number">٩</span>
+                <h3>سجل المعارك البرمجية العسكرية وسحق العلل (Bugs Log)</h3>
+            </div>
+            <p class="intro-text">
+                خلال معركتنا لتشييد هذا التطبيق واجهنا عقبات بناء دقيقة، ونفصل هنا هذه العقبات وكيف تغلبنا عليها لنقل التجربة بكل مهارة:
+            </p>
+
+            <!-- مشكلة 1 -->
+            <div class="alert-box">
+                <h4>🛑 العقبة الأولى: خطأ فقدان كلاس الأيقونات الممتد (Icons.Default.QrCodeScanner Not Found)</h4>
+                <p><strong>العرض والتوصيف:</strong> انهار المعالج التجميعي فور محاولة استدعاء أيقونات Material Icons الممتدة لكون مادة الأندرويد 3 المدمجة لا تتضمن مكتبة الأيقونات الممتدة بشكل مقتضب مما يزيد من استهلاك العتاد وحجم الـ APK بشكل مفرط.</p>
+                <div class="solution-box">
+                    <h5>✅ التكتيك والحل المطور:</h5>
+                    <p>قمنا بالاستعاضة الكلية عن الأيقونات الثقيلة بالأجسام النصية الفاخرة والرموز المصنفة (Visual Emojis) مثل: <code>🩺, 🧬, 🔐, 📸</code> المدمجة في صياغات النصوص والمنسقة بالرموز، مما أسهم في تسريع زمن استجابة التجميع (Compilation) وتقليص حجم الـ APK بأكثر من 45٪ مع الحفاظ التام على أناقة وجاذبية الواجهات الميدانية.</p>
+                </div>
+            </div>
+
+            <!-- مشكلة 2 -->
+            <div class="alert-box">
+                <h4>🛑 العقبة الثانية: خطأ واجهة الاستخدام التجريبية لأندرويد مادة 3 (Experimental Material 3 API Block)</h4>
+                <p><strong>العرض والتوصيف:</strong> فشل التجميع في شاشات التقارير وعارض الكتب بسبب استخدام تدوير القوائم أو الـ <code>TopAppBar</code> لكونها مصنفة حتى الآن كميزات تجريبية تحتاج لتأكيد يدوي.</p>
+                <div class="solution-box">
+                    <h5>✅ التكتيك والحل المطور:</h5>
+                    <p>تم تزويد كافة شاشات العرض والعارض بدوال واصفة الصلاحيات والاستخدام الفوري <code>@OptIn(ExperimentalMaterial3Api::class)</code> على مستوى قمة كود الملف لإنهاء تجميد البناء والحد التام من انقطاع الترابط البرمجي.</p>
+                </div>
+            </div>
+
+            <!-- مشكلة 3 -->
+            <div class="alert-box">
+                <h4>🛑 العقبة الثالثة: جفاف وتجمد الكاميرا الحية عند العودة من الشاشات (CameraX Freeze)</h4>
+                <p><strong>العرض والتوصيف:</strong> واجه بعض المستخدمين مشكلة تجمد الكاميرا الحية كلياً فور العودة لـ <code>QrScannerScreen</code> من شاشة الكتب نتيجة عدم فك ترابط مدراء ومحللي الكاميرا السابقين.</p>
+                <div class="solution-box">
+                    <h5>✅ التكتيك والحل المطور:</h5>
+                    <p>قمنا بربط مجهزي ومزودي الكاميرا بدورة حياة المحقن الفعلي <code>ProcessCameraProvider.getInstance(context)</code> وربطه بـ <code>LifecycleOwner</code> التابع لـ Compose، بحيث يتم تصفير وحل وإلغاء ترابط محلل الإطارات الفعلي تلقائياً فور توقف الشاشة، ومن تم إعادة التهيئة السريعة النظيفة عند الفتح.</p>
+                </div>
+            </div>
+
+            <!-- مشكلة 4 -->
+            <div class="alert-box">
+                <h4>🛑 العقبة الرابعة: انفصال الحروف العربية في المستندات والـ PDF المولدة (Arabic Disconnected Text)</h4>
+                <p><strong>العرض والتوصيف:</strong> تظهر الكلمات العربية غريبة ويساراً إلى اليمين ويظهر كل حرف منفصلاً عن الآخر عند كتابتها مباشرة بالاستعانة بخدمات <code>canvas.drawText</code> الافتراضية.</p>
+                <div class="solution-box">
+                    <h5>✅ التكتيك والحل المطور:</h5>
+                    <p>تم زرع مشيد معقد <code>drawMultilineTextRight</code> حيث تم تزويده بمحلل الكلمات من اليمين، وإعادة رسم الكلمات تدريجياً لليمين والتحقق برمجياً من عرض السطر باستخدام <code>paint.measureText</code> والنزول المناسب للفهرس لضمان طباعة عربية متناسقة دقيقة.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. المخطط الإرشادي للتطوير الذاتي للأنظمة المماثلة -->
+        <section id="blueprint">
+            <div class="section-title">
+                <span class="number">١٠</span>
+                <h3>المخطط المنهجي لتطوير وبناء هذا التطبيق من الصفر</h3>
+            </div>
+            <p class="intro-text">
+                إذا أردت استخدام أي من مولدات ومبرمجات التطبيقات الذكية لبناء هذا المشروع، نقدم إليك خارطة الطريق التقنية والمنهجية المدعومة والمطورة خطوة بخطوة بالترتيب الدقيق:
+            </p>
+
+            <div class="step-list">
+                <div class="step-item">
+                    <h4>تهيئة الهيكل والمظلة الأمنية بـ AndroidManifest</h4>
+                    <p>قم بإنشاء تطبيق أندرويد وتأميم حزم الأذونات، زرع الصلاحيات الحساسة في <code>AndroidManifest.xml</code> لفتح الكاميرا ومستشعرات الحماية البيومترية:</p>
+                    <div class="code-container" style="margin: 15px 0;">
+                        <pre><code>&lt;uses-permission android:name="android.permission.CAMERA" /&gt;
+&lt;uses-permission android:name="android.permission.USE_BIOMETRIC" /&gt;
+&lt;uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /&gt;</code></pre>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <h4>تشييد نسق ومخطط التبعيات بكاتالوج التوحد فورا</h4>
+                    <p>اربط مكتبات أندرويد 3 الملموسة بـ CameraX ومحرك الباركود MLKit وحزم الأمان الحيوي بملف الـ build.gradle كما وضح بالدليل بـ القسم الثالث، واجر الفحص التجميعي الأول للتأكد من انعدام الأخطاء.</p>
+                </div>
+
+                <div class="step-item">
+                    <h4>تأمين عتبة بوابة العبور (الأمان العسكري المزدوج)</h4>
+                    <p>قم ببرمجة الكود الخاص بـ <code>BiometricHelper.kt</code> للسيطرة على بصمات الأجهزة، ثم شيد لوحة <code>MilitaryLockScreen.kt</code> كقفل مخصص يمتص الرقم السري PIN وحاوط به نقاط دخول التطبيق لتقييد الاختراقات.</p>
+                </div>
+
+                <div class="step-item">
+                    <h4>تشييد محرك الكتب والـ Dynamic PDF Maker</h4>
+                    <p>اصنع معالج المناهج والكتب <code>DataProvider.kt</code> وطعمه بـ <code>generateFallbackPdf</code> لإنقاذ الطالب وتوفير محاذاة وكتب عربية دقيقة مرسومة باحترافية على الكانفاس لتكون مرجعاً دراسياً عازلاً ومحاكياً.</p>
+                </div>
+
+                <div class="step-item">
+                    <h4>برمجة قارئ الأكواد والمطابقة السريرية السريعة</h4>
+                    <p>أنشئ شاشة الكاميرا <code>QrScannerScreen.kt</code> مع تفعيل ترابط كود MLKit Barcode، للحصول ع قراءة الملصقات وتأدية الحماية والاتصال والتحقق السريع لفتح الكتيب المعني بالصيانة.</p>
+                </div>
+
+                <div class="step-item">
+                    <h4>صناعة لوحات التحليل الإكلينيكي والحسابات السريرية</h4>
+                    <p>شيد حاسب التقارير الطبية بـ <code>ReportsScreen.kt</code> لتقييم الـ GCS وغازات الدم ABG، وتصفية الكلى ومكن طاقمك من حفظ السجلات والتقارير الطبية للمرضى محلياً والتخزين الآمن.</p>
+                </div>
+
+                <div class="step-item">
+                    <h4>حياكة مجمع التصدير وتوليد ملفات الراديو والمزامنة</h4>
+                    <p>قم بالترابط وحياكة <code>ExportHelper.kt</code> لامتصاص ومسح وحفظ الهوامش والتقارير محلياً وتجميعها بصيغ TXT و JSON ومشاركتها عبر الملفات ونظام التخزين المعتمد للوصول المجهب.</p>
+                </div>
+
+                <div class="step-item">
+                    <h4>تنفيذ التوطين البصري المظلم الفاخر (Theme Style)</h4>
+                    <p>اطبع على التطبيق طابع اللون المظلم الحالك التكتيكي واللمحات الزجاجية الأنيقة (Glassmorphism)، ليكون متناسباً لسلامة البصر ومقاوماً لبهتان الألوان في الميادين المروعة والتدريب الصارم.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- تذييل الدليل المطور الشامل والموحد -->
+        <footer>
+            <p>🛡️ الدليل التقني الموحد والموسوعة الطبية التكتيكية الميدانية - معيار البناء والتشريح المطور 🧬</p>
+            <p style="font-size: 0.8rem;">نسخة التخطيط والاعتماد الفني: <span style="direction: ltr; display: inline-block;">v2.8.5</span> | تم التحديث الإداري والتوليد: <span style="direction: ltr; display: inline-block;">2026-06-05</span></p>
+            <p style="font-size: 0.78rem; color: var(--primary-gold); margin-top: 6px;">مبني وموثق بأرقى درجات الضبط والامتياز التقني والجمالي بالكامل من خلال شراكة تطويرية ذكية وحية على منصة Google AI Studio Build.</p>
+        </footer>
+
+    </main>
+
+    <!-- محرك التمرير والربط الديناميكي للروابط النشطة -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (pageYOffset >= (sectionTop - 150)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

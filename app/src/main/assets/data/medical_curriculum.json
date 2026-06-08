@@ -1,0 +1,609 @@
+{
+  "program_name": "خطة الدراسة للحصول على درجة البكالوريوس في الطب العام والجراحة",
+  "stages": [
+    {
+      "stage_id": 1,
+      "stage_name": "المرحلة الأولى (التأسيس في العلوم الأساسية للميدان)",
+      "semesters": [
+        {
+          "semester_id": 1,
+          "semester_name": "الفصل الدراسي الأول",
+          "summary": {
+            "total_credit_hours": 23.5,
+            "total_actual_hours": 496
+          },
+          "courses": [
+            {
+              "id": 1,
+              "name": "الثقافة الإسلامية – جزء عمَّ",
+              "credits": { "theoretical": 3, "practical": 0, "clinical": 0, "total": 3.0 },
+              "actual_hours": { "theoretical": 48, "practical": 0, "clinical": 0, "total": 48 }
+            },
+            {
+              "id": 2,
+              "name": "علم الأدوية العام",
+              "credits": { "theoretical": 3, "practical": 0.5, "clinical": 0, "total": 3.25 },
+              "actual_hours": { "theoretical": 48, "practical": 16, "clinical": 0, "total": 64 }
+            },
+            {
+              "id": 3,
+              "name": "أسس تمريض",
+              "credits": { "theoretical": 2, "practical": 0.5, "clinical": 0, "total": 2.25 },
+              "actual_hours": { "theoretical": 32, "practical": 16, "clinical": 0, "total": 48 }
+            },
+            {
+              "id": 4,
+              "name": "أساسيات اللغة الإنجليزية",
+              "credits": { "theoretical": 1, "practical": 0.5, "clinical": 0, "total": 1.25 },
+              "actual_hours": { "theoretical": 16, "practical": 16, "clinical": 0, "total": 32 }
+            },
+            {
+              "id": 5,
+              "name": "مبادئ الطب الوقائي",
+              "credits": { "theoretical": 2, "practical": 0, "clinical": 0, "total": 2.0 },
+              "actual_hours": { "theoretical": 32, "practical": 0, "clinical": 0, "total": 32 }
+            },
+            {
+              "id": 6,
+              "name": "مقدمة الباطنية - الأمراض شائعة",
+              "credits": { "theoretical": 3, "practical": 0.5, "clinical": 0, "total": 3.25 },
+              "actual_hours": { "theoretical": 48, "practical": 16, "clinical": 0, "total": 64 }
+            },
+            {
+              "id": 7,
+              "name": "علم التشريح العام",
+              "credits": { "theoretical": 2, "practical": 2, "clinical": 0, "total": 3.0 },
+              "actual_hours": { "theoretical": 32, "practical": 64, "clinical": 0, "total": 96 }
+            },
+            {
+              "id": 8,
+              "name": "علم وظائف الأعضاء العام",
+              "credits": { "theoretical": 3, "practical": 0.5, "clinical": 0, "total": 3.25 },
+              "actual_hours": { "theoretical": 48, "practical": 16, "clinical": 0, "total": 64 }
+            },
+            {
+              "id": 9,
+              "name": "طوارئ الحرب الجرثومية والكيميائية",
+              "credits": { "theoretical": 1, "practical": 0, "clinical": 0, "total": 1.0 },
+              "actual_hours": { "theoretical": 16, "practical": 0, "clinical": 0, "total": 16 }
+            },
+            {
+              "id": 10,
+              "name": "إسعافات أولية",
+              "credits": { "theoretical": 1, "practical": 0.5, "clinical": 0, "total": 1.25 },
+              "actual_hours": { "theoretical": 16, "practical": 16, "clinical": 0, "total": 32 }
+            }
+          ]
+        },
+        {
+          "semester_id": 2,
+          "semester_name": "الفصل الدراسي الثاني",
+          "summary": {
+            "total_credit_hours": 15.5,
+            "total_actual_hours": 320
+          },
+          "courses": [
+            {
+              "id": 1,
+              "name": "الثقافة القرآنية - السيرة النبوية",
+              "credits": { "theoretical": 2, "practical": 0, "clinical": 0, "total": 2.0 },
+              "actual_hours": { "theoretical": 32, "practical": 0, "clinical": 0, "total": 32 }
+            },
+            {
+              "id": 2,
+              "name": "علم التشريح السريري",
+              "credits": { "theoretical": 3, "practical": 0.5, "clinical": 0, "total": 3.25 },
+              "actual_hours": { "theoretical": 48, "practical": 16, "clinical": 0, "total": 64 }
+            },
+            {
+              "id": 3,
+              "name": "أساسيات الانعاش والطوارئ",
+              "credits": { "theoretical": 3, "practical": 1, "clinical": 0, "total": 3.5 },
+              "actual_hours": { "theoretical": 48, "practical": 32, "clinical": 0, "total": 80 }
+            },
+            {
+              "id": 4,
+              "name": "مبادئ إصابات الحروب",
+              "credits": { "theoretical": 3, "practical": 0.5, "clinical": 0, "total": 3.25 },
+              "actual_hours": { "theoretical": 48, "practical": 16, "clinical": 0, "total": 64 }
+            },
+            {
+              "id": 5,
+              "name": "علم الأدوية الطارئة",
+              "credits": { "theoretical": 1, "practical": 0.5, "clinical": 0, "total": 1.25 },
+              "actual_hours": { "theoretical": 16, "practical": 16, "clinical": 0, "total": 32 }
+            },
+            {
+              "id": 6,
+              "name": "أساسيات نقل الدم",
+              "credits": { "theoretical": 1, "practical": 0.5, "clinical": 0, "total": 1.25 },
+              "actual_hours": { "theoretical": 16, "practical": 16, "clinical": 0, "total": 32 }
+            },
+            {
+              "id": 7,
+              "name": "إدارة المراكز الميدانية",
+              "credits": { "theoretical": 1, "practical": 0, "clinical": 0, "total": 1.0 },
+              "actual_hours": { "theoretical": 16, "practical": 0, "clinical": 0, "total": 16 }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage_id": 2,
+      "stage_name": "المرحلة الثانية (التأسيس في العلوم الأساسية للطب)",
+      "semesters": [
+        {
+          "semester_id": 3,
+          "semester_name": "الفصل الدراسي الثالث",
+          "summary": {
+            "total_credit_hours": 34,
+            "total_actual_hours": 832
+          },
+          "courses": [
+            {
+              "id": 1,
+              "name": "الثقافة القرآنية- الولاية – طبيعة الصراع",
+              "credits": { "theoretical": 3, "practical": 0, "clinical": 0, "total": 3.0 },
+              "actual_hours": { "theoretical": 48, "practical": 0, "clinical": 0, "total": 48 }
+            },
+            {
+              "id": 2,
+              "name": "اللغة العربية",
+              "credits": { "theoretical": 2, "practical": 0, "clinical": 0, "total": 2.0 },
+              "actual_hours": { "theoretical": 32, "practical": 0, "clinical": 0, "total": 32 }
+            },
+            {
+              "id": 3,
+              "name": "مصطلحات طبية (عام)",
+              "credits": { "theoretical": 3, "practical": 0, "clinical": 0, "total": 3.0 },
+              "actual_hours": { "theoretical": 48, "practical": 0, "clinical": 0, "total": 48 }
+            },
+            {
+              "id": 4,
+              "name": "علم الأنسجة العام",
+              "credits": { "theoretical": 2, "practical": 2, "clinical": 0, "total": 3.0 },
+              "actual_hours": { "theoretical": 32, "practical": 64, "clinical": 0, "total": 96 }
+            },
+            {
+              "id": 5,
+              "name": "الكيمياء الحيوية العامة",
+              "credits": { "theoretical": 3, "practical": 2, "clinical": 0, "total": 4.0 },
+              "actual_hours": { "theoretical": 48, "practical": 64, "clinical": 0, "total": 112 }
+            },
+            {
+              "id": 6,
+              "name": "علم الأحياء الدقيقة العام",
+              "credits": { "theoretical": 4, "practical": 2, "clinical": 0, "total": 5.0 },
+              "actual_hours": { "theoretical": 64, "practical": 64, "clinical": 0, "total": 128 }
+            },
+            {
+              "id": 7,
+              "name": "علم الطفيليات العامة",
+              "credits": { "theoretical": 4, "practical": 2, "clinical": 0, "total": 5.0 },
+              "actual_hours": { "theoretical": 64, "practical": 64, "clinical": 0, "total": 128 }
+            },
+            {
+              "id": 8,
+              "name": "علم الأمراض العام",
+              "credits": { "theoretical": 4, "practical": 4, "clinical": 0, "total": 6.0 },
+              "actual_hours": { "theoretical": 64, "practical": 128, "clinical": 0, "total": 192 }
+            },
+            {
+              "id": 9,
+              "name": "كيمياء عامة",
+              "credits": { "theoretical": 3, "practical": 0, "clinical": 0, "total": 3.0 },
+              "actual_hours": { "theoretical": 48, "practical": 0, "clinical": 0, "total": 48 }
+            }
+          ]
+        },
+        {
+          "semester_id": 4,
+          "semester_name": "الفصل الدراسي الرابع",
+          "summary": {
+            "total_credit_hours": 28,
+            "total_actual_hours": 640
+          },
+          "courses": [
+            {
+              "id": 1,
+              "name": "الثقافة القرآنية – العقيدة",
+              "credits": { "theoretical": 3, "practical": 0, "clinical": 0, "total": 3.0 },
+              "actual_hours": { "theoretical": 48, "practical": 0, "clinical": 0, "total": 48 }
+            },
+            {
+              "id": 2,
+              "name": "مهارات تشخيصية تقنية",
+              "credits": { "theoretical": 2, "practical": 1, "clinical": 0, "total": 2.5 },
+              "actual_hours": { "theoretical": 32, "practical": 32, "clinical": 0, "total": 64 }
+            },
+            {
+              "id": 3,
+              "name": "مقدمة الفحص السريري والتقييم الصحي",
+              "credits": { "theoretical": 2, "practical": 1, "clinical": 0, "total": 2.5 },
+              "actual_hours": { "theoretical": 32, "practical": 32, "clinical": 0, "total": 64 }
+            },
+            {
+              "id": 4,
+              "name": "مهارات الاتصال والتواصل",
+              "credits": { "theoretical": 2, "practical": 1, "clinical": 0, "total": 2.5 },
+              "actual_hours": { "theoretical": 32, "practical": 32, "clinical": 0, "total": 64 }
+            },
+            {
+              "id": 5,
+              "name": "تقنيات عمليات جراحية (عام)",
+              "credits": { "theoretical": 2, "practical": 1, "clinical": 0, "total": 2.5 },
+              "actual_hours": { "theoretical": 32, "practical": 32, "clinical": 0, "total": 64 }
+            },
+            {
+              "id": 6,
+              "name": "أساسيات رعاية الطوارئ الطبية",
+              "credits": { "theoretical": 2, "practical": 1, "clinical": 0, "total": 2.5 },
+              "actual_hours": { "theoretical": 32, "practical": 32, "clinical": 0, "total": 64 }
+            },
+            {
+              "id": 7,
+              "name": "فيزيا طبية",
+              "credits": { "theoretical": 3, "practical": 0, "clinical": 0, "total": 3.0 },
+              "actual_hours": { "theoretical": 48, "practical": 0, "clinical": 0, "total": 48 }
+            },
+            {
+              "id": 8,
+              "name": "علم الوبائيات",
+              "credits": { "theoretical": 1, "practical": 0, "clinical": 0, "total": 1.0 },
+              "actual_hours": { "theoretical": 16, "practical": 0, "clinical": 0, "total": 16 }
+            },
+            {
+              "id": 9,
+              "name": "مقدمة رعاية الحالات الحرجة والعناية المركزة",
+              "credits": { "theoretical": 2, "practical": 2, "clinical": 0, "total": 3.0 },
+              "actual_hours": { "theoretical": 32, "practical": 64, "clinical": 0, "total": 96 }
+            },
+            {
+              "id": 10,
+              "name": "علم الإحصاء الطبي",
+              "credits": { "theoretical": 2, "practical": 1, "clinical": 0, "total": 2.5 },
+              "actual_hours": { "theoretical": 32, "practical": 32, "clinical": 0, "total": 64 }
+            },
+            {
+              "id": 11,
+              "name": "مقدمة في علوم الكمبيوتر",
+              "credits": { "theoretical": 3, "practical": 0, "clinical": 0, "total": 3.0 },
+              "actual_hours": { "theoretical": 48, "practical": 0, "clinical": 0, "total": 48 }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage_id": 3,
+      "stage_name": "المرحلة الثالثة: التأسيسية بنظام الأجهزة (البلك)",
+      "semesters": [
+        {
+          "semester_id": 5,
+          "semester_name": "الفصل الدراسي الخامس",
+          "summary": {
+            "total_credit_hours": 23,
+            "total_actual_hours": 656
+          },
+          "courses": [
+            {
+              "id": 1,
+              "name": "الثقافة القرآنية – يوم الفرقان – التربية الايمانية",
+              "credits": { "theoretical": 3, "practical": 0, "clinical": 0, "total": 3.0 },
+              "actual_hours": { "theoretical": 48, "practical": 0, "clinical": 0, "total": 48 }
+            },
+            {
+              "id": 2,
+              "name": "الجهاز الهيكلي العضلي",
+              "credits": { "theoretical": 4, "practical": 4, "clinical": 0, "total": 6.0 },
+              "actual_hours": { "theoretical": 64, "practical": 128, "clinical": 0, "total": 192 }
+            },
+            {
+              "id": 3,
+              "name": "الجهاز القلبي والأوعية الدموية",
+              "credits": { "theoretical": 4, "practical": 4, "clinical": 0, "total": 6.0 },
+              "actual_hours": { "theoretical": 64, "practical": 128, "clinical": 0, "total": 192 }
+            },
+            {
+              "id": 4,
+              "name": "الجهاز التنفسي",
+              "credits": { "theoretical": 4, "practical": 4, "clinical": 0, "total": 6.0 },
+              "actual_hours": { "theoretical": 64, "practical": 128, "clinical": 0, "total": 192 }
+            },
+            {
+              "id": 5,
+              "name": "مكارم الأخلاق واخلاقيات المهنة",
+              "credits": { "theoretical": 2, "practical": 0, "clinical": 0, "total": 2.0 },
+              "actual_hours": { "theoretical": 32, "practical": 0, "clinical": 0, "total": 32 }
+            }
+          ]
+        },
+        {
+          "semester_id": 6,
+          "semester_name": "الفصل الدراسي السادس",
+          "summary": {
+            "total_credit_hours": 23,
+            "total_actual_hours": 656
+          },
+          "courses": [
+            {
+              "id": 1,
+              "name": "الثقافة القرآنية – الأحكام",
+              "credits": { "theoretical": 2, "practical": 0, "clinical": 0, "total": 2.0 },
+              "actual_hours": { "theoretical": 32, "practical": 0, "clinical": 0, "total": 32 }
+            },
+            {
+              "id": 2,
+              "name": "الجهاز الهضمي",
+              "credits": { "theoretical": 4, "practical": 4, "clinical": 0, "total": 6.0 },
+              "actual_hours": { "theoretical": 64, "practical": 128, "clinical": 0, "total": 192 }
+            },
+            {
+              "id": 3,
+              "name": "الجهاز البولي التناسلي",
+              "credits": { "theoretical": 4, "practical": 4, "clinical": 0, "total": 6.0 },
+              "actual_hours": { "theoretical": 64, "practical": 128, "clinical": 0, "total": 192 }
+            },
+            {
+              "id": 4,
+              "name": "الجهاز الدموي واللمفاوي",
+              "credits": { "theoretical": 4, "practical": 4, "clinical": 0, "total": 6.0 },
+              "actual_hours": { "theoretical": 64, "practical": 128, "clinical": 0, "total": 192 }
+            },
+            {
+              "id": 5,
+              "name": "مبادى التغذية العلاجية عام",
+              "credits": { "theoretical": 3, "practical": 0, "clinical": 0, "total": 3.0 },
+              "actual_hours": { "theoretical": 48, "practical": 0, "clinical": 0, "total": 48 }
+            }
+          ]
+        },
+        {
+          "semester_id": 7,
+          "semester_name": "الفصل الدراسي السابع",
+          "summary": {
+            "total_credit_hours": 20,
+            "total_actual_hours": 608
+          },
+          "courses": [
+            {
+              "id": 1,
+              "name": "الثقافة القرآنية – التأريخ الإسلامي",
+              "credits": { "theoretical": 2, "practical": 0, "clinical": 0, "total": 2.0 },
+              "actual_hours": { "theoretical": 32, "practical": 0, "clinical": 0, "total": 32 }
+            },
+            {
+              "id": 2,
+              "name": "الجهاز الصمائي",
+              "credits": { "theoretical": 4, "practical": 4, "clinical": 0, "total": 6.0 },
+              "actual_hours": { "theoretical": 64, "practical": 128, "clinical": 0, "total": 192 }
+            },
+            {
+              "id": 3,
+              "name": "الجهاز العصبي 1",
+              "credits": { "theoretical": 3, "practical": 2, "clinical": 0, "total": 4.0 },
+              "actual_hours": { "theoretical": 48, "practical": 64, "clinical": 0, "total": 112 }
+            },
+            {
+              "id": 4,
+              "name": "الجهاز العصبي 2",
+              "credits": { "theoretical": 3, "practical": 2, "clinical": 0, "total": 4.0 },
+              "actual_hours": { "theoretical": 48, "practical": 64, "clinical": 0, "total": 112 }
+            },
+            {
+              "id": 5,
+              "name": "علوم عسكرية",
+              "credits": { "theoretical": 3, "practical": 2, "clinical": 0, "total": 4.0 },
+              "actual_hours": { "theoretical": 48, "practical": 64, "clinical": 0, "total": 112 }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage_id": 4,
+      "stage_name": "المرحلة الرابعة (السريرية)",
+      "semesters": [
+        {
+          "semester_id": 8,
+          "semester_name": "الفصل الدراسي الثامن",
+          "summary": {
+            "total_credit_hours": 12,
+            "total_actual_hours": 432
+          },
+          "courses": [
+            {
+              "id": 1,
+              "name": "علم النفس السريري (علوم السلوك)",
+              "credits": { "theoretical": 3, "practical": 0, "clinical": 0, "total": 3.0 },
+              "actual_hours": { "theoretical": 48, "practical": 0, "clinical": 0, "total": 48 }
+            },
+            {
+              "id": 2,
+              "name": "الجراحة العامة (1)",
+              "credits": { "theoretical": 0, "practical": 0, "clinical": 8, "total": 9.0 },
+              "actual_hours": { "theoretical": 0, "practical": 0, "clinical": 384, "total": 384 }
+            }
+          ]
+        },
+        {
+          "semester_id": 9,
+          "semester_name": "الفصل الدراسي التاسع",
+          "summary": {
+            "total_credit_hours": 22,
+            "total_actual_hours": 848
+          },
+          "courses": [
+            {
+              "id": 1,
+              "name": "الطب العام 1",
+              "credits": { "theoretical": 0, "practical": 0, "clinical": 8, "total": 9.0 },
+              "actual_hours": { "theoretical": 0, "practical": 0, "clinical": 384, "total": 384 }
+            },
+            {
+              "id": 2,
+              "name": "طب الأطفال 1",
+              "credits": { "theoretical": 0, "practical": 0, "clinical": 8, "total": 9.0 },
+              "actual_hours": { "theoretical": 0, "practical": 0, "clinical": 384, "total": 384 }
+            },
+            {
+              "id": 3,
+              "name": "الطب الوقائي رقم 3",
+              "credits": { "theoretical": 2, "practical": 0, "clinical": 0, "total": 2.0 },
+              "actual_hours": { "theoretical": 32, "practical": 0, "clinical": 0, "total": 48 }
+            },
+            {
+              "id": 4,
+              "name": "تكنولوجيا المعلومات",
+              "credits": { "theoretical": 2, "practical": 0, "clinical": 0, "total": 2.0 },
+              "actual_hours": { "theoretical": 32, "practical": 0, "clinical": 0, "total": 32 }
+            }
+          ]
+        },
+        {
+          "semester_id": 10,
+          "semester_name": "الفصل الدراسي العاشر",
+          "summary": {
+            "total_credit_hours": 16,
+            "total_actual_hours": 640
+          },
+          "courses": [
+            {
+              "id": 1,
+              "name": "التوليد وأمراض النساء رقم 1",
+              "credits": { "theoretical": 0, "practical": 0, "clinical": 8, "total": 9.0 },
+              "actual_hours": { "theoretical": 0, "practical": 0, "clinical": 384, "total": 384 }
+            },
+            {
+              "id": 2,
+              "name": "منهجية البحث والإحصاء الحيوي",
+              "credits": { "theoretical": 2, "practical": 1, "clinical": 0, "total": 2.5 },
+              "actual_hours": { "theoretical": 32, "practical": 32, "clinical": 0, "total": 64 }
+            },
+            {
+              "id": 3,
+              "name": "الطب النفسي",
+              "credits": { "theoretical": 0, "practical": 0, "clinical": 4, "total": 4.5 },
+              "actual_hours": { "theoretical": 0, "practical": 0, "clinical": 192, "total": 192 }
+            }
+          ]
+        },
+        {
+          "semester_id": 11,
+          "semester_name": "الفصل الدراسي الحادي عشر",
+          "summary": {
+            "total_credit_hours": 18,
+            "total_actual_hours": 768
+          },
+          "courses": [
+            {
+              "id": 1,
+              "name": "الأنف والأذن والحنجرة",
+              "credits": { "theoretical": 0, "practical": 0, "clinical": 2, "total": 2.25 },
+              "actual_hours": { "theoretical": 0, "practical": 0, "clinical": 96, "total": 96 }
+            },
+            {
+              "id": 2,
+              "name": "جراحة العظام",
+              "credits": { "theoretical": 0, "practical": 0, "clinical": 2, "total": 2.25 },
+              "actual_hours": { "theoretical": 0, "practical": 0, "clinical": 96, "total": 96 }
+            },
+            {
+              "id": 3,
+              "name": "التخدير",
+              "credits": { "theoretical": 0, "practical": 0, "clinical": 2, "total": 2.25 },
+              "actual_hours": { "theoretical": 0, "practical": 0, "clinical": 96, "total": 96 }
+            },
+            {
+              "id": 4,
+              "name": "علم الأعصاب",
+              "credits": { "theoretical": 0, "practical": 0, "clinical": 2, "total": 2.25 },
+              "actual_hours": { "theoretical": 0, "practical": 0, "clinical": 96, "total": 96 }
+            },
+            {
+              "id": 5,
+              "name": "طب العيون",
+              "credits": { "theoretical": 0, "practical": 0, "clinical": 2, "total": 2.25 },
+              "actual_hours": { "theoretical": 0, "practical": 0, "clinical": 96, "total": 96 }
+            },
+            {
+              "id": 6,
+              "name": "الأمراض الجلدية",
+              "credits": { "theoretical": 0, "practical": 0, "clinical": 2, "total": 2.25 },
+              "actual_hours": { "theoretical": 0, "practical": 0, "clinical": 96, "total": 96 }
+            },
+            {
+              "id": 7,
+              "name": "الأشعة التشخيصية",
+              "credits": { "theoretical": 0, "practical": 0, "clinical": 2, "total": 2.25 },
+              "actual_hours": { "theoretical": 0, "practical": 0, "clinical": 96, "total": 96 }
+            },
+            {
+              "id": 8,
+              "name": "الطب الشرعي وعلم السموم",
+              "credits": { "theoretical": 0, "practical": 0, "clinical": 2, "total": 2.25 },
+              "actual_hours": { "theoretical": 0, "practical": 0, "clinical": 96, "total": 96 }
+            }
+          ]
+        },
+        {
+          "semester_id": 12,
+          "semester_name": "الفصل الدراسي الثاني عشر",
+          "summary": {
+            "total_credit_hours": 27,
+            "total_actual_hours": 1152
+          },
+          "courses": [
+            {
+              "id": 1,
+              "name": "الطب العام 2",
+              "credits": { "theoretical": 0, "practical": 0, "clinical": 8, "total": 9.0 },
+              "actual_hours": { "theoretical": 0, "practical": 0, "clinical": 384, "total": 384 }
+            },
+            {
+              "id": 2,
+              "name": "الجراحة العامة 2",
+              "credits": { "theoretical": 0, "practical": 0, "clinical": 8, "total": 9.0 },
+              "actual_hours": { "theoretical": 0, "practical": 0, "clinical": 384, "total": 384 }
+            },
+            {
+              "id": 3,
+              "name": "طب الأطفال 2",
+              "credits": { "theoretical": 0, "practical": 0, "clinical": 8, "total": 9.0 },
+              "actual_hours": { "theoretical": 0, "practical": 0, "clinical": 384, "total": 384 }
+            }
+          ]
+        },
+        {
+          "semester_id": 13,
+          "semester_name": "الفصل الدراسي الثالث عشر",
+          "summary": {
+            "total_credit_hours": 21,
+            "total_actual_hours": 816
+          },
+          "courses": [
+            {
+              "id": 1,
+              "name": "التوليد وأمراض النساء 2",
+              "credits": { "theoretical": 0, "practical": 0, "clinical": 8, "total": 9.0 },
+              "actual_hours": { "theoretical": 0, "practical": 0, "clinical": 384, "total": 384 }
+            },
+            {
+              "id": 2,
+              "name": "الاختياري",
+              "credits": { "theoretical": 0, "practical": 0, "clinical": 8, "total": 9.0 },
+              "actual_hours": { "theoretical": 0, "practical": 0, "clinical": 384, "total": 384 }
+            },
+            {
+              "id": 3,
+              "name": "مشروع تخرج",
+              "credits": { "theoretical": 3, "practical": 0, "clinical": 0, "total": 3.0 },
+              "actual_hours": { "theoretical": 48, "practical": 0, "clinical": 0, "total": 48 }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

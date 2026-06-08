@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#16191E"
+    android:layoutDirection="rtl"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Calculator Form Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="#212730"
+            app:strokeWidth="1dp"
+            app:strokeColor="#2F3540"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="⚖️ معايير حساب الجرعة التكتيكية"
+                    android:textColor="#FFD700"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- Patient Weight Input -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:textColorHint="#A0A5B0"
+                    app:boxStrokeColor="#FFD700"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:boxStrokeWidth="1dp"
+                    app:hintTextColor="#FFD700"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etWeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="وزن المريض الإجمالي (كجم)"
+                        android:textColor="#FFFFFF"
+                        android:inputType="numberDecimal" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Patient Age Input -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:textColorHint="#A0A5B0"
+                    app:boxStrokeColor="#2F3540"
+                    app:boxStrokeWidthFocused="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="عمر المريض بالسنوات"
+                        android:textColor="#FFFFFF"
+                        android:inputType="numberDecimal" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Custom Dose Per Kg Input -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilCustomDose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:textColorHint="#A0A5B0"
+                    app:boxStrokeColor="#2F3540"
+                    app:boxStrokeWidthFocused="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etCustomDose"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="الجرعة المطلوبة لكل كجم (mg/kg)"
+                        android:textColor="#FFFFFF"
+                        android:inputType="numberDecimal" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Concentration Input -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilConcentration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:textColorHint="#A0A5B0"
+                    app:boxStrokeColor="#2F3540"
+                    app:boxStrokeWidthFocused="2dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etConcentration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="تركيز الأمبول المتوفر للحقن الميداني (mg/mL)"
+                        android:textColor="#FFFFFF"
+                        android:text="1.0"
+                        android:inputType="numberDecimal" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Calculate Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCalculate"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:text="🧮 احسب الجرعة السريرية المحققة"
+                    android:textColor="#16191E"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="#FFD700"
+                    app:cornerRadius="8dp" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Calculation Result Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="#212730"
+            app:strokeWidth="1.5dp"
+            app:strokeColor="#FFD700"
+            app:cardElevation="3dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🧮 نتيجة الحساب والجرعة المعتمدة:"
+                    android:textColor="#FFD700"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvCalculatedDoseValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0.0 mg"
+                    android:textColor="#00E676"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvCalculatedDoseDisclaimer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="إرشادات..."
+                    android:textColor="#FFFFFF"
+                    android:lineSpacingExtra="4dp"
+                    android:textSize="14sp" />
+
+                <!-- Exceed Max Warning -->
+                <TextView
+                    android:id="@+id/tvMaxDoseWarning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="⚠️ تجاوز الحد الأقصى للمستحضر! تم الخفض تكتيكياً للجرعة القصوى."
+                    android:textColor="#FF9800"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,6 @@
+{
+  "name": "المكتبة الطبية العسكرية",
+  "description": "تطبيق المناهج الطبية ودليل المقررات والأجهزة المتكامله للمستشفيات والأطباء العسكريين.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
