@@ -1,0 +1,479 @@
+{
+  "metadata": {
+    "root_path": "java",
+    "path_mode": "absolute",
+    "generated_at": "٢٠٢٦-٠٦-٠٩T٠٢:٠٦:٤٠",
+    "generator": "TreeDoc for Android"
+  },
+  "tree": {
+    "name": "java",
+    "type": "directory",
+    "path": "/storage/4403-B0CA/midapp/app/src/main/java",
+    "children": [
+      {
+        "name": "com",
+        "type": "directory",
+        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com",
+        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+        "children": [
+          {
+            "name": "example",
+            "type": "directory",
+            "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example",
+            "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+            "children": [
+              {
+                "name": "data",
+                "type": "directory",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/data",
+                "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                "children": [
+                  {
+                    "name": "DataProvider.kt",
+                    "type": "file",
+                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/data/DataProvider.kt",
+                    "size": "39.8 MB",
+                    "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                    "children": []
+                  },
+                  {
+                    "name": "DocumentNotesManager.kt",
+                    "type": "file",
+                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/data/DocumentNotesManager.kt",
+                    "size": "522 B",
+                    "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                    "children": []
+                  },
+                  {
+                    "name": "DrugDatabaseHelper.kt",
+                    "type": "file",
+                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/data/DrugDatabaseHelper.kt",
+                    "size": "103.3 MB",
+                    "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                    "children": []
+                  },
+                  {
+                    "name": "OfflineCacheManager.kt",
+                    "type": "file",
+                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/data/OfflineCacheManager.kt",
+                    "size": "3.5 MB",
+                    "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "helper",
+                "type": "directory",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/helper",
+                "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                "children": [
+                  {
+                    "name": "BiometricHelper.kt",
+                    "type": "file",
+                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/helper/BiometricHelper.kt",
+                    "size": "3.5 MB",
+                    "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                    "children": []
+                  },
+                  {
+                    "name": "CalculatorLogic.kt",
+                    "type": "file",
+                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/helper/CalculatorLogic.kt",
+                    "size": "3.4 MB",
+                    "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                    "children": []
+                  },
+                  {
+                    "name": "ExportHelper.kt",
+                    "type": "file",
+                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/helper/ExportHelper.kt",
+                    "size": "9.2 MB",
+                    "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                    "children": []
+                  },
+                  {
+                    "name": "GeminiHelper.kt",
+                    "type": "file",
+                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/helper/GeminiHelper.kt",
+                    "size": "19.5 MB",
+                    "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "model",
+                "type": "directory",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/model",
+                "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                "children": [
+                  {
+                    "name": "Drug.kt",
+                    "type": "file",
+                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/model/Drug.kt",
+                    "size": "764 B",
+                    "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                    "children": []
+                  },
+                  {
+                    "name": "Models.kt",
+                    "type": "file",
+                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/model/Models.kt",
+                    "size": "420 B",
+                    "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                    "children": []
+                  },
+                  {
+                    "name": "RecentCalc.kt",
+                    "type": "file",
+                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/model/RecentCalc.kt",
+                    "size": "165 B",
+                    "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "ui",
+                "type": "directory",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui",
+                "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                "children": [
+                  {
+                    "name": "components",
+                    "type": "directory",
+                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/components",
+                    "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                    "children": [
+                      {
+                        "name": "Book3DCard.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/components/Book3DCard.kt",
+                        "size": "6.7 MB",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      },
+                      {
+                        "name": "GlassCard.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/components/GlassCard.kt",
+                        "size": "4.7 MB",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      },
+                      {
+                        "name": "GoldButton.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/components/GoldButton.kt",
+                        "size": "1.1 MB",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      },
+                      {
+                        "name": "IntubationSimulator.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/components/IntubationSimulator.kt",
+                        "size": "27.4 MB",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      },
+                      {
+                        "name": "LaserScanRipple.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/components/LaserScanRipple.kt",
+                        "size": "4.7 MB",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      },
+                      {
+                        "name": "Shelf.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/components/Shelf.kt",
+                        "size": "1.3 MB",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      },
+                      {
+                        "name": "StaggeredEntrance.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/components/StaggeredEntrance.kt",
+                        "size": "1.3 MB",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      },
+                      {
+                        "name": "TerminalText.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/components/TerminalText.kt",
+                        "size": "1.6 MB",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "navigation",
+                    "type": "directory",
+                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/navigation",
+                    "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                    "children": [
+                      {
+                        "name": "NavGraph.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/navigation/NavGraph.kt",
+                        "size": "10.1 MB",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "screens",
+                    "type": "directory",
+                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens",
+                    "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                    "children": [
+                      {
+                        "name": "BooksScreen.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/BooksScreen.kt",
+                        "size": "6.5 MB",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      },
+                      {
+                        "name": "CalculatorsScreen.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/CalculatorsScreen.kt",
+                        "size": "17.7 MB",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      },
+                      {
+                        "name": "ChapterScreen.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/ChapterScreen.kt",
+                        "size": "8.1 MB",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      },
+                      {
+                        "name": "ContentBooksScreen.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/ContentBooksScreen.kt",
+                        "size": "7.1 MB",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      },
+                      {
+                        "name": "DeviceScreen.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/DeviceScreen.kt",
+                        "size": "3.7 MB",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      },
+                      {
+                        "name": "DiplomaScreen.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/DiplomaScreen.kt",
+                        "size": "62.3 MB",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      },
+                      {
+                        "name": "DirectoryScreen.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/DirectoryScreen.kt",
+                        "size": "32.1 MB",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      },
+                      {
+                        "name": "HomeScreen.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/HomeScreen.kt",
+                        "size": "69.1 MB",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      },
+                      {
+                        "name": "InventoryDashboardScreen.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/InventoryDashboardScreen.kt",
+                        "size": "58.7 MB",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      },
+                      {
+                        "name": "MilitaryLockScreen.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/MilitaryLockScreen.kt",
+                        "size": "20.1 MB",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      },
+                      {
+                        "name": "PdfViewerScreen.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/PdfViewerScreen.kt",
+                        "size": "51.2 MB",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      },
+                      {
+                        "name": "QrScannerScreen.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/QrScannerScreen.kt",
+                        "size": "47.3 MB",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      },
+                      {
+                        "name": "ReportsScreen.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/ReportsScreen.kt",
+                        "size": "55.4 MB",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      },
+                      {
+                        "name": "SearchScreen.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/SearchScreen.kt",
+                        "size": "40.6 MB",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      },
+                      {
+                        "name": "SimulationCenterScreen.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/SimulationCenterScreen.kt",
+                        "size": "226.5 MB",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      },
+                      {
+                        "name": "SkillsScreen.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/SkillsScreen.kt",
+                        "size": "13.8 MB",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      },
+                      {
+                        "name": "SubjectContentScreen.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/SubjectContentScreen.kt",
+                        "size": "3.3 MB",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "theme",
+                    "type": "directory",
+                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/theme",
+                    "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                    "children": [
+                      {
+                        "name": "Color.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/theme/Color.kt",
+                        "size": "961 B",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      },
+                      {
+                        "name": "Theme.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/theme/Theme.kt",
+                        "size": "1.6 MB",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      },
+                      {
+                        "name": "Type.kt",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/theme/Type.kt",
+                        "size": "994 B",
+                        "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "AbgActivity.kt",
+                "type": "file",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/AbgActivity.kt",
+                "size": "15.7 MB",
+                "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                "children": []
+              },
+              {
+                "name": "CalculatorsActivity.kt",
+                "type": "file",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/CalculatorsActivity.kt",
+                "size": "1.4 MB",
+                "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                "children": []
+              },
+              {
+                "name": "DetailActivity.kt",
+                "type": "file",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/DetailActivity.kt",
+                "size": "7.8 MB",
+                "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                "children": []
+              },
+              {
+                "name": "DosageActivity.kt",
+                "type": "file",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/DosageActivity.kt",
+                "size": "28.9 MB",
+                "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                "children": []
+              },
+              {
+                "name": "EgfrActivity.kt",
+                "type": "file",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/EgfrActivity.kt",
+                "size": "16.6 MB",
+                "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                "children": []
+              },
+              {
+                "name": "GcsActivity.kt",
+                "type": "file",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/GcsActivity.kt",
+                "size": "14.6 MB",
+                "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                "children": []
+              },
+              {
+                "name": "MainActivity.kt",
+                "type": "file",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/MainActivity.kt",
+                "size": "1.4 MB",
+                "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                "children": []
+              },
+              {
+                "name": "ReportsActivity.kt",
+                "type": "file",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ReportsActivity.kt",
+                "size": "1.4 MB",
+                "mtime": "٢٠٢٦-٠٦-٠٨ ٢٢:٤٢:٣٩",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

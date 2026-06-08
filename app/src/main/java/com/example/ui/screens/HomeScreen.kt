@@ -71,7 +71,6 @@ fun HomeScreen(onNavigate: (String) -> Unit) {
         }
     }
 
-    // Structured curriculum database categorized into requested folders
     val folders = remember {
         listOf(
             DrawerFolder(
@@ -182,7 +181,7 @@ fun HomeScreen(onNavigate: (String) -> Unit) {
                                     modifier = Modifier.padding(horizontal = 4.dp, vertical = 2.dp)
                                 )
 
-                                // Real-time Simulation lab highlight (Glows in Amber Gold with badge!)
+                                // Real-time Simulation lab highlight
                                 Card(
                                     onClick = {
                                         scope.launch { drawerState.close() }
@@ -216,6 +215,20 @@ fun HomeScreen(onNavigate: (String) -> Unit) {
                                         }
                                     }
                                 }
+
+                                // ===== الخطة الدراسية (مضافة) =====
+                                SidebarServiceRow(
+                                    icon = "📅",
+                                    title = "الخطة الدراسية",
+                                    description = "تصفح فصول ومقررات برنامج الطب والجراحة",
+                                    onClick = {
+                                        scope.launch {
+                                            drawerState.close()
+                                            onNavigate("study_plan")
+                                        }
+                                    }
+                                )
+                                // ===== نهاية الإضافة =====
 
                                 SidebarServiceRow(
                                     icon = "📚",
@@ -493,7 +506,8 @@ fun HomeScreen(onNavigate: (String) -> Unit) {
                                         Text("📡", fontSize = 18.sp)
                                         Spacer(modifier = Modifier.height(4.dp))
                                         Text(
-                                            text = "لا توجد مستندات مؤقتة حاليًّا.\nتصفّح أي مستند لحفظه تلقائيًّا للميدان.",
+                                            text = "لا توجد مستندات مؤقتة حاليًّا.
+تصفّح أي مستند لحفظه تلقائيًّا للميدان.",
                                             fontSize = 9.5.sp,
                                             color = TextSecondary,
                                             textAlign = TextAlign.Center,
@@ -757,6 +771,37 @@ fun HomeScreen(onNavigate: (String) -> Unit) {
                             }
                         }
                     }
+                    // ===== بطاقة الخطة الدراسية (مضافة) =====
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(12.dp)
+                    ) {
+                        GlassCard(
+                            modifier = Modifier
+                                .weight(1f)
+                                .height(105.dp)
+                                .clickable { onNavigate("study_plan") }
+                        ) {
+                            Column(
+                                modifier = Modifier.fillMaxSize(),
+                                horizontalAlignment = Alignment.CenterHorizontally,
+                                verticalArrangement = Arrangement.Center
+                            ) {
+                                Text(text = "📅", fontSize = 28.sp)
+                                Spacer(modifier = Modifier.height(4.dp))
+                                Text(
+                                    text = "الخطة الدراسية",
+                                    fontSize = 13.sp,
+                                    color = TextGold,
+                                    fontWeight = FontWeight.Bold,
+                                    textAlign = TextAlign.Center
+                                )
+                            }
+                        }
+                        // بطاقة فارغة للتوازن أو يمكن إضافة شيء آخر
+                        Spacer(modifier = Modifier.weight(1f))
+                    }
+                    // ===== نهاية الإضافة =====
                     Row(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.spacedBy(12.dp)
@@ -1216,7 +1261,6 @@ fun HomeScreen(onNavigate: (String) -> Unit) {
         }
     }
 }
-}
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -1246,4 +1290,3 @@ fun SidebarServiceRow(
         }
     }
 }
-

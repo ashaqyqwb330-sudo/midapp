@@ -15,6 +15,43 @@ fun NavGraph(navController: NavHostController) {
         composable("home") {
             HomeScreen(onNavigate = { navController.navigate(it) })
         }
+        
+        // ===== المسارات الجديدة (الخطة الدراسية) =====
+        composable("study_plan") {
+            StudyPlanScreen(
+                onBack = { navController.popBackStack() },
+                onSemesterClick = { id -> navController.navigate("semester/$id") },
+                onMedicalSystemsClick = { navController.navigate("medical_systems") }
+            )
+        }
+        composable(
+            "semester/{semesterId}",
+            arguments = listOf(navArgument("semesterId") { type = NavType.IntType })
+        ) { backStackEntry ->
+            val id = backStackEntry.arguments?.getInt("semesterId") ?: 1
+            SemesterScreen(
+                semesterId = id,
+                onBack = { navController.popBackStack() },
+                onCourseClick = { title -> navController.navigate("course/${Uri.encode(title)}") }
+            )
+        }
+        composable(
+            "course/{courseTitle}",
+            arguments = listOf(navArgument("courseTitle") { type = NavType.StringType })
+        ) { backStackEntry ->
+            val title = Uri.decode(backStackEntry.arguments?.getString("courseTitle") ?: "")
+            CourseDetailScreen(
+                courseTitle = title,
+                onBack = { navController.popBackStack() }
+            )
+        }
+        composable("medical_systems") {
+            MedicalSystemsScreen(
+                onBack = { navController.popBackStack() }
+            )
+        }
+        // ===== نهاية المسارات الجديدة =====
+
         composable("diploma") {
             DiplomaScreen(onNavigate = { screen, params ->
                 when (screen) {
@@ -190,19 +227,13 @@ fun NavGraph(navController: NavHostController) {
             )
         }
         composable("reports") {
-            ReportsScreen(
-                onBack = { navController.popBackStack() }
-            )
+            ReportsScreen(onBack = { navController.popBackStack() })
         }
         composable("calculators") {
-            CalculatorsScreen(
-                onBack = { navController.popBackStack() }
-            )
+            CalculatorsScreen(onBack = { navController.popBackStack() })
         }
         composable("inventory") {
-            InventoryDashboardScreen(
-                onBack = { navController.popBackStack() }
-            )
+            InventoryDashboardScreen(onBack = { navController.popBackStack() })
         }
         composable("qr_scanner") {
             QrScannerScreen(
@@ -213,9 +244,7 @@ fun NavGraph(navController: NavHostController) {
             )
         }
         composable("simulation") {
-            SimulationCenterScreen(
-                onBack = { navController.popBackStack() }
-            )
+            SimulationCenterScreen(onBack = { navController.popBackStack() })
         }
     }
 }

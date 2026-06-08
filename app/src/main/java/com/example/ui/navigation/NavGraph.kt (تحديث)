@@ -1,0 +1,37 @@
+// أضف هذه الاستيرادات في أعلى الملف:
+import android.net.Uri
+// ...
+// أضف هذه المسارات داخل NavHost:
+composable("study_plan") {
+    StudyPlanScreen(
+        onBack = { navController.popBackStack() },
+        onSemesterClick = { id -> navController.navigate("semester/$id") },
+        onMedicalSystemsClick = { navController.navigate("medical_systems") }
+    )
+}
+composable(
+    "semester/{semesterId}",
+    arguments = listOf(navArgument("semesterId") { type = NavType.IntType })
+) { backStackEntry ->
+    val id = backStackEntry.arguments?.getInt("semesterId") ?: 1
+    SemesterScreen(
+        semesterId = id,
+        onBack = { navController.popBackStack() },
+        onCourseClick = { title -> navController.navigate("course/${Uri.encode(title)}") }
+    )
+}
+composable(
+    "course/{courseTitle}",
+    arguments = listOf(navArgument("courseTitle") { type = NavType.StringType })
+) { backStackEntry ->
+    val title = Uri.decode(backStackEntry.arguments?.getString("courseTitle") ?: "")
+    CourseDetailScreen(
+        courseTitle = title,
+        onBack = { navController.popBackStack() }
+    )
+}
+composable("medical_systems") {
+    MedicalSystemsScreen(
+        onBack = { navController.popBackStack() }
+    )
+}

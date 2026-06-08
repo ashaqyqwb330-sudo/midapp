@@ -1,0 +1,269 @@
+{
+  "metadata": {
+    "root_path": "builderAndBuilded",
+    "path_mode": "absolute",
+    "generated_at": "٢٠٢٦-٠٦-٠٩T٠١:٤١:٠٢",
+    "generator": "TreeDoc for Android"
+  },
+  "tree": {
+    "name": "builderAndBuilded",
+    "type": "directory",
+    "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded",
+    "children": [
+      {
+        "name": "files",
+        "type": "directory",
+        "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files",
+        "mtime": "٢٠٢٦-٠٦-٠٩ ٠١:٣٨:٥٦",
+        "children": [
+          {
+            "name": "data",
+            "type": "directory",
+            "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/data",
+            "mtime": "٢٠٢٦-٠٦-٠٩ ٠١:٣٨:٣٨",
+            "children": [
+              {
+                "name": "01-الأساسيات",
+                "type": "directory",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/data/01-الأساسيات",
+                "mtime": "٢٠٢٦-٠٦-٠٩ ٠١:٣٨:٣٧",
+                "children": []
+              },
+              {
+                "name": "02-التطبيقات المتقدمة1",
+                "type": "directory",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/data/02-التطبيقات المتقدمة1",
+                "mtime": "٢٠٢٦-٠٦-٠٩ ٠١:٣٨:٣٨",
+                "children": []
+              },
+              {
+                "name": "03-المقرر 3",
+                "type": "directory",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/data/03-المقرر 3",
+                "mtime": "٢٠٢٦-٠٦-٠٩ ٠١:٣٨:٣٤",
+                "children": []
+              },
+              {
+                "name": "04-المقرر 4",
+                "type": "directory",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/data/04-المقرر 4",
+                "mtime": "٢٠٢٦-٠٦-٠٩ ٠١:٣٨:٣٦",
+                "children": []
+              },
+              {
+                "name": "05-الأجهزة الطبية",
+                "type": "directory",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/data/05-الأجهزة الطبية",
+                "mtime": "٢٠٢٦-٠٦-٠٩ ٠١:٣٨:٤٩",
+                "children": []
+              },
+              {
+                "name": "05-مواد عامة",
+                "type": "directory",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/data/05-مواد عامة",
+                "mtime": "٢٠٢٦-٠٦-٠٩ ٠١:٣٨:٣٥",
+                "children": []
+              },
+              {
+                "name": "06-الأجهزة المتقدمة",
+                "type": "directory",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/data/06-الأجهزة المتقدمة",
+                "mtime": "٢٠٢٦-٠٦-٠٩ ٠١:٣٨:٢٢",
+                "children": []
+              },
+              {
+                "name": "07-مواد عامة",
+                "type": "directory",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/data/07-مواد عامة",
+                "mtime": "٢٠٢٦-٠٦-٠٩ ٠١:٣٨:٢١",
+                "children": []
+              },
+              {
+                "name": "08-التخصصات الدقيقة",
+                "type": "directory",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/data/08-التخصصات الدقيقة",
+                "mtime": "٢٠٢٦-٠٦-٠٩ ٠١:٣٨:٢١",
+                "children": []
+              },
+              {
+                "name": "09-البحث العلمي",
+                "type": "directory",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/data/09-البحث العلمي",
+                "mtime": "٢٠٢٦-٠٦-٠٩ ٠١:٣٨:٢٢",
+                "children": []
+              },
+              {
+                "name": "10-التدريب الميداني",
+                "type": "directory",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/data/10-التدريب الميداني",
+                "mtime": "٢٠٢٦-٠٦-٠٩ ٠١:٣٨:٣٧",
+                "children": []
+              },
+              {
+                "name": "11-التطبيقات المتقدمة2",
+                "type": "directory",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/data/11-التطبيقات المتقدمة2",
+                "mtime": "٢٠٢٦-٠٦-٠٩ ٠١:٣٨:٣٧",
+                "children": []
+              },
+              {
+                "name": "12-المشاريع",
+                "type": "directory",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/data/12-المشاريع",
+                "mtime": "٢٠٢٦-٠٦-٠٩ ٠١:٣٨:٢٢",
+                "children": []
+              },
+              {
+                "name": "13-التخرج",
+                "type": "directory",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/data/13-التخرج",
+                "mtime": "٢٠٢٦-٠٦-٠٩ ٠١:٣٨:٣٨",
+                "children": []
+              },
+              {
+                "name": "images",
+                "type": "directory",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/data/images",
+                "mtime": "٢٠٢٦-٠٦-٠٩ ٠١:٣٨:٢٩",
+                "children": []
+              },
+              {
+                "name": "training",
+                "type": "directory",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/data/training",
+                "mtime": "٢٠٢٦-٠٦-٠٩ ٠١:٣٨:٣٣",
+                "children": []
+              },
+              {
+                "name": "app_assets_map.json",
+                "type": "file",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/data/app_assets_map.json",
+                "size": "368.7 MB",
+                "mtime": "٢٠٢٦-٠٥-٢٩ ٠٥:٣١:٣٠",
+                "children": []
+              },
+              {
+                "name": "study_plan.pdf",
+                "type": "file",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/data/study_plan.pdf",
+                "size": "31.0 MB",
+                "mtime": "٢٠٢٦-٠٥-٢٩ ٠٥:٣١:٣٠",
+                "children": []
+              },
+              {
+                "name": "غلاف_الخطة_الدراسية.png",
+                "type": "file",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/data/غلاف_الخطة_الدراسية.png",
+                "size": "17.5 MB",
+                "mtime": "٢٠٢٦-٠٥-٢٩ ٠٥:٣١:٣٠",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "resources",
+            "type": "directory",
+            "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/resources",
+            "mtime": "٢٠٢٦-٠٦-٠٩ ٠١:٣٨:٢١",
+            "children": [
+              {
+                "name": "font",
+                "type": "directory",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/resources/font",
+                "mtime": "٢٠٢٦-٠٦-٠٩ ٠١:٣٨:٢١",
+                "children": []
+              },
+              {
+                "name": "images",
+                "type": "directory",
+                "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/resources/images",
+                "mtime": "٢٠٢٦-٠٦-٠٩ ٠١:٣٨:٢١",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "builder_daemon.py",
+            "type": "file",
+            "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/builder_daemon.py",
+            "size": "5.4 MB",
+            "mtime": "٢٠٢٦-٠٥-٢٩ ٠٥:٢٦:٤٦",
+            "children": []
+          },
+          {
+            "name": "deep_migrate.py",
+            "type": "file",
+            "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/deep_migrate.py",
+            "size": "5.9 MB",
+            "mtime": "٢٠٢٦-٠٥-٢٩ ٠٥:٢٦:٤٦",
+            "children": []
+          },
+          {
+            "name": "final_migrate_and_update_json.py",
+            "type": "file",
+            "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/final_migrate_and_update_json.py",
+            "size": "8.4 MB",
+            "mtime": "٢٠٢٦-٠٥-٢٩ ٠٥:٢٦:٤٦",
+            "children": []
+          },
+          {
+            "name": "fix_covers.py",
+            "type": "file",
+            "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/fix_covers.py",
+            "size": "7.0 MB",
+            "mtime": "٢٠٢٦-٠٥-٢٩ ٠٥:٢٦:٤٦",
+            "children": []
+          },
+          {
+            "name": "fix_migrate.py",
+            "type": "file",
+            "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/fix_migrate.py",
+            "size": "4.4 MB",
+            "mtime": "٢٠٢٦-٠٥-٢٩ ٠٥:٢٦:٤٦",
+            "children": []
+          },
+          {
+            "name": "fix_remaining.py",
+            "type": "file",
+            "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/fix_remaining.py",
+            "size": "7.0 MB",
+            "mtime": "٢٠٢٦-٠٥-٢٩ ٠٥:٢٦:٤٦",
+            "children": []
+          },
+          {
+            "name": "generate_all_data.py",
+            "type": "file",
+            "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/generate_all_data.py",
+            "size": "9.4 MB",
+            "mtime": "٢٠٢٦-٠٥-٢٩ ٠٥:٢٦:٤٦",
+            "children": []
+          },
+          {
+            "name": "migrate_real_files.py",
+            "type": "file",
+            "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/migrate_real_files.py",
+            "size": "7.1 MB",
+            "mtime": "٢٠٢٦-٠٥-٢٩ ٠٥:٢٦:٤٦",
+            "children": []
+          },
+          {
+            "name": "rebuild_json.py",
+            "type": "file",
+            "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/rebuild_json.py",
+            "size": "1.9 MB",
+            "mtime": "٢٠٢٦-٠٥-٢٩ ٠٥:٢٦:٤٦",
+            "children": []
+          },
+          {
+            "name": "tree_report.html",
+            "type": "file",
+            "path": "/storage/4403-B0CA/midapp/app/src/main/assets/builderAndBuilded/files/tree_report.html",
+            "size": "261.9 MB",
+            "mtime": "٢٠٢٦-٠٥-٢٩ ٠٥:٢٦:٤٦",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}

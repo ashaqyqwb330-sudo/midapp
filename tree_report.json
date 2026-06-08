@@ -1,0 +1,1079 @@
+{
+  "metadata": {
+    "root_path": "midapp",
+    "path_mode": "absolute",
+    "generated_at": "٢٠٢٦-٠٦-٠٩T٠٠:٢٩:٢٥",
+    "generator": "TreeDoc for Android"
+  },
+  "tree": {
+    "name": "midapp",
+    "type": "directory",
+    "path": "/storage/4403-B0CA/midapp",
+    "category": "مجلد",
+    "children": [
+      {
+        "name": ".build-outputs",
+        "type": "directory",
+        "path": "/storage/4403-B0CA/midapp/.build-outputs",
+        "category": "مجلد",
+        "children": [
+          {
+            "name": "app-debug.apk",
+            "type": "file",
+            "path": "/storage/4403-B0CA/midapp/.build-outputs/app-debug.apk",
+            "category": "تطبيق/نظام",
+            "size": "38.3 GB",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "app",
+        "type": "directory",
+        "path": "/storage/4403-B0CA/midapp/app",
+        "category": "مجلد",
+        "children": [
+          {
+            "name": "src",
+            "type": "directory",
+            "path": "/storage/4403-B0CA/midapp/app/src",
+            "category": "مجلد",
+            "children": [
+              {
+                "name": "androidTest",
+                "type": "directory",
+                "path": "/storage/4403-B0CA/midapp/app/src/androidTest",
+                "category": "مجلد",
+                "children": [
+                  {
+                    "name": "java",
+                    "type": "directory",
+                    "path": "/storage/4403-B0CA/midapp/app/src/androidTest/java",
+                    "category": "مجلد",
+                    "children": [
+                      {
+                        "name": "com",
+                        "type": "directory",
+                        "path": "/storage/4403-B0CA/midapp/app/src/androidTest/java/com",
+                        "category": "مجلد",
+                        "children": [
+                          {
+                            "name": "example",
+                            "type": "directory",
+                            "path": "/storage/4403-B0CA/midapp/app/src/androidTest/java/com/example",
+                            "category": "مجلد",
+                            "children": [
+                              {
+                                "name": "ExampleInstrumentedTest.kt",
+                                "type": "file",
+                                "path": "/storage/4403-B0CA/midapp/app/src/androidTest/java/com/example/ExampleInstrumentedTest.kt",
+                                "category": "برمجيات/أكواد",
+                                "size": "630 B",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "main",
+                "type": "directory",
+                "path": "/storage/4403-B0CA/midapp/app/src/main",
+                "category": "مجلد",
+                "children": [
+                  {
+                    "name": "assets",
+                    "type": "directory",
+                    "path": "/storage/4403-B0CA/midapp/app/src/main/assets",
+                    "category": "مجلد",
+                    "children": [
+                      {
+                        "name": "data",
+                        "type": "directory",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/assets/data",
+                        "category": "مجلد",
+                        "children": [
+                          {
+                            "name": "app_assets_map.json",
+                            "type": "file",
+                            "path": "/storage/4403-B0CA/midapp/app/src/main/assets/data/app_assets_map.json",
+                            "category": "مستند",
+                            "size": "363.8 MB",
+                            "children": []
+                          },
+                          {
+                            "name": "medical_curriculum.json",
+                            "type": "file",
+                            "path": "/storage/4403-B0CA/midapp/app/src/main/assets/data/medical_curriculum.json",
+                            "category": "مستند",
+                            "size": "26.6 MB",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "java",
+                    "type": "directory",
+                    "path": "/storage/4403-B0CA/midapp/app/src/main/java",
+                    "category": "مجلد",
+                    "children": [
+                      {
+                        "name": "com",
+                        "type": "directory",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com",
+                        "category": "مجلد",
+                        "children": [
+                          {
+                            "name": "example",
+                            "type": "directory",
+                            "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example",
+                            "category": "مجلد",
+                            "children": [
+                              {
+                                "name": "data",
+                                "type": "directory",
+                                "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/data",
+                                "category": "مجلد",
+                                "children": [
+                                  {
+                                    "name": "DataProvider.kt",
+                                    "type": "file",
+                                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/data/DataProvider.kt",
+                                    "category": "برمجيات/أكواد",
+                                    "size": "39.8 MB",
+                                    "children": []
+                                  },
+                                  {
+                                    "name": "DocumentNotesManager.kt",
+                                    "type": "file",
+                                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/data/DocumentNotesManager.kt",
+                                    "category": "برمجيات/أكواد",
+                                    "size": "522 B",
+                                    "children": []
+                                  },
+                                  {
+                                    "name": "DrugDatabaseHelper.kt",
+                                    "type": "file",
+                                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/data/DrugDatabaseHelper.kt",
+                                    "category": "برمجيات/أكواد",
+                                    "size": "103.3 MB",
+                                    "children": []
+                                  },
+                                  {
+                                    "name": "OfflineCacheManager.kt",
+                                    "type": "file",
+                                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/data/OfflineCacheManager.kt",
+                                    "category": "برمجيات/أكواد",
+                                    "size": "3.5 MB",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "helper",
+                                "type": "directory",
+                                "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/helper",
+                                "category": "مجلد",
+                                "children": [
+                                  {
+                                    "name": "BiometricHelper.kt",
+                                    "type": "file",
+                                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/helper/BiometricHelper.kt",
+                                    "category": "برمجيات/أكواد",
+                                    "size": "3.5 MB",
+                                    "children": []
+                                  },
+                                  {
+                                    "name": "CalculatorLogic.kt",
+                                    "type": "file",
+                                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/helper/CalculatorLogic.kt",
+                                    "category": "برمجيات/أكواد",
+                                    "size": "3.4 MB",
+                                    "children": []
+                                  },
+                                  {
+                                    "name": "ExportHelper.kt",
+                                    "type": "file",
+                                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/helper/ExportHelper.kt",
+                                    "category": "برمجيات/أكواد",
+                                    "size": "9.2 MB",
+                                    "children": []
+                                  },
+                                  {
+                                    "name": "GeminiHelper.kt",
+                                    "type": "file",
+                                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/helper/GeminiHelper.kt",
+                                    "category": "برمجيات/أكواد",
+                                    "size": "19.5 MB",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "model",
+                                "type": "directory",
+                                "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/model",
+                                "category": "مجلد",
+                                "children": [
+                                  {
+                                    "name": "Drug.kt",
+                                    "type": "file",
+                                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/model/Drug.kt",
+                                    "category": "برمجيات/أكواد",
+                                    "size": "764 B",
+                                    "children": []
+                                  },
+                                  {
+                                    "name": "Models.kt",
+                                    "type": "file",
+                                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/model/Models.kt",
+                                    "category": "برمجيات/أكواد",
+                                    "size": "420 B",
+                                    "children": []
+                                  },
+                                  {
+                                    "name": "RecentCalc.kt",
+                                    "type": "file",
+                                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/model/RecentCalc.kt",
+                                    "category": "برمجيات/أكواد",
+                                    "size": "165 B",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "ui",
+                                "type": "directory",
+                                "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui",
+                                "category": "مجلد",
+                                "children": [
+                                  {
+                                    "name": "components",
+                                    "type": "directory",
+                                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/components",
+                                    "category": "مجلد",
+                                    "children": [
+                                      {
+                                        "name": "Book3DCard.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/components/Book3DCard.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "6.7 MB",
+                                        "children": []
+                                      },
+                                      {
+                                        "name": "GlassCard.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/components/GlassCard.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "4.7 MB",
+                                        "children": []
+                                      },
+                                      {
+                                        "name": "GoldButton.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/components/GoldButton.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "1.1 MB",
+                                        "children": []
+                                      },
+                                      {
+                                        "name": "IntubationSimulator.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/components/IntubationSimulator.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "27.4 MB",
+                                        "children": []
+                                      },
+                                      {
+                                        "name": "LaserScanRipple.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/components/LaserScanRipple.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "4.7 MB",
+                                        "children": []
+                                      },
+                                      {
+                                        "name": "Shelf.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/components/Shelf.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "1.3 MB",
+                                        "children": []
+                                      },
+                                      {
+                                        "name": "StaggeredEntrance.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/components/StaggeredEntrance.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "1.3 MB",
+                                        "children": []
+                                      },
+                                      {
+                                        "name": "TerminalText.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/components/TerminalText.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "1.6 MB",
+                                        "children": []
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "name": "navigation",
+                                    "type": "directory",
+                                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/navigation",
+                                    "category": "مجلد",
+                                    "children": [
+                                      {
+                                        "name": "NavGraph.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/navigation/NavGraph.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "10.1 MB",
+                                        "children": []
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "name": "screens",
+                                    "type": "directory",
+                                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens",
+                                    "category": "مجلد",
+                                    "children": [
+                                      {
+                                        "name": "BooksScreen.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/BooksScreen.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "6.5 MB",
+                                        "children": []
+                                      },
+                                      {
+                                        "name": "CalculatorsScreen.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/CalculatorsScreen.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "17.7 MB",
+                                        "children": []
+                                      },
+                                      {
+                                        "name": "ChapterScreen.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/ChapterScreen.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "8.1 MB",
+                                        "children": []
+                                      },
+                                      {
+                                        "name": "ContentBooksScreen.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/ContentBooksScreen.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "7.1 MB",
+                                        "children": []
+                                      },
+                                      {
+                                        "name": "DeviceScreen.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/DeviceScreen.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "3.7 MB",
+                                        "children": []
+                                      },
+                                      {
+                                        "name": "DiplomaScreen.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/DiplomaScreen.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "62.3 MB",
+                                        "children": []
+                                      },
+                                      {
+                                        "name": "DirectoryScreen.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/DirectoryScreen.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "32.1 MB",
+                                        "children": []
+                                      },
+                                      {
+                                        "name": "HomeScreen.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/HomeScreen.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "69.1 MB",
+                                        "children": []
+                                      },
+                                      {
+                                        "name": "InventoryDashboardScreen.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/InventoryDashboardScreen.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "58.7 MB",
+                                        "children": []
+                                      },
+                                      {
+                                        "name": "MilitaryLockScreen.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/MilitaryLockScreen.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "20.1 MB",
+                                        "children": []
+                                      },
+                                      {
+                                        "name": "PdfViewerScreen.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/PdfViewerScreen.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "51.2 MB",
+                                        "children": []
+                                      },
+                                      {
+                                        "name": "QrScannerScreen.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/QrScannerScreen.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "47.3 MB",
+                                        "children": []
+                                      },
+                                      {
+                                        "name": "ReportsScreen.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/ReportsScreen.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "55.4 MB",
+                                        "children": []
+                                      },
+                                      {
+                                        "name": "SearchScreen.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/SearchScreen.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "40.6 MB",
+                                        "children": []
+                                      },
+                                      {
+                                        "name": "SimulationCenterScreen.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/SimulationCenterScreen.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "226.5 MB",
+                                        "children": []
+                                      },
+                                      {
+                                        "name": "SkillsScreen.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/SkillsScreen.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "13.8 MB",
+                                        "children": []
+                                      },
+                                      {
+                                        "name": "SubjectContentScreen.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/screens/SubjectContentScreen.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "3.3 MB",
+                                        "children": []
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "name": "theme",
+                                    "type": "directory",
+                                    "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/theme",
+                                    "category": "مجلد",
+                                    "children": [
+                                      {
+                                        "name": "Color.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/theme/Color.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "961 B",
+                                        "children": []
+                                      },
+                                      {
+                                        "name": "Theme.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/theme/Theme.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "1.6 MB",
+                                        "children": []
+                                      },
+                                      {
+                                        "name": "Type.kt",
+                                        "type": "file",
+                                        "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ui/theme/Type.kt",
+                                        "category": "برمجيات/أكواد",
+                                        "size": "994 B",
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "AbgActivity.kt",
+                                "type": "file",
+                                "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/AbgActivity.kt",
+                                "category": "برمجيات/أكواد",
+                                "size": "15.7 MB",
+                                "children": []
+                              },
+                              {
+                                "name": "CalculatorsActivity.kt",
+                                "type": "file",
+                                "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/CalculatorsActivity.kt",
+                                "category": "برمجيات/أكواد",
+                                "size": "1.4 MB",
+                                "children": []
+                              },
+                              {
+                                "name": "DetailActivity.kt",
+                                "type": "file",
+                                "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/DetailActivity.kt",
+                                "category": "برمجيات/أكواد",
+                                "size": "7.8 MB",
+                                "children": []
+                              },
+                              {
+                                "name": "DosageActivity.kt",
+                                "type": "file",
+                                "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/DosageActivity.kt",
+                                "category": "برمجيات/أكواد",
+                                "size": "28.9 MB",
+                                "children": []
+                              },
+                              {
+                                "name": "EgfrActivity.kt",
+                                "type": "file",
+                                "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/EgfrActivity.kt",
+                                "category": "برمجيات/أكواد",
+                                "size": "16.6 MB",
+                                "children": []
+                              },
+                              {
+                                "name": "GcsActivity.kt",
+                                "type": "file",
+                                "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/GcsActivity.kt",
+                                "category": "برمجيات/أكواد",
+                                "size": "14.6 MB",
+                                "children": []
+                              },
+                              {
+                                "name": "MainActivity.kt",
+                                "type": "file",
+                                "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/MainActivity.kt",
+                                "category": "برمجيات/أكواد",
+                                "size": "1.4 MB",
+                                "children": []
+                              },
+                              {
+                                "name": "ReportsActivity.kt",
+                                "type": "file",
+                                "path": "/storage/4403-B0CA/midapp/app/src/main/java/com/example/ReportsActivity.kt",
+                                "category": "برمجيات/أكواد",
+                                "size": "1.4 MB",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "res",
+                    "type": "directory",
+                    "path": "/storage/4403-B0CA/midapp/app/src/main/res",
+                    "category": "مجلد",
+                    "children": [
+                      {
+                        "name": "drawable",
+                        "type": "directory",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/res/drawable",
+                        "category": "مجلد",
+                        "children": [
+                          {
+                            "name": "ic_back.xml",
+                            "type": "file",
+                            "path": "/storage/4403-B0CA/midapp/app/src/main/res/drawable/ic_back.xml",
+                            "category": "برمجيات/أكواد",
+                            "size": "356 B",
+                            "children": []
+                          },
+                          {
+                            "name": "ic_launcher_background.xml",
+                            "type": "file",
+                            "path": "/storage/4403-B0CA/midapp/app/src/main/res/drawable/ic_launcher_background.xml",
+                            "category": "برمجيات/أكواد",
+                            "size": "856 B",
+                            "children": []
+                          },
+                          {
+                            "name": "ic_launcher_foreground.xml",
+                            "type": "file",
+                            "path": "/storage/4403-B0CA/midapp/app/src/main/res/drawable/ic_launcher_foreground.xml",
+                            "category": "برمجيات/أكواد",
+                            "size": "1.2 MB",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "layout",
+                        "type": "directory",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/res/layout",
+                        "category": "مجلد",
+                        "children": [
+                          {
+                            "name": "activity_detail.xml",
+                            "type": "file",
+                            "path": "/storage/4403-B0CA/midapp/app/src/main/res/layout/activity_detail.xml",
+                            "category": "برمجيات/أكواد",
+                            "size": "1.5 MB",
+                            "children": []
+                          },
+                          {
+                            "name": "layout_tab_calculator.xml",
+                            "type": "file",
+                            "path": "/storage/4403-B0CA/midapp/app/src/main/res/layout/layout_tab_calculator.xml",
+                            "category": "برمجيات/أكواد",
+                            "size": "9.4 MB",
+                            "children": []
+                          },
+                          {
+                            "name": "layout_tab_forms.xml",
+                            "type": "file",
+                            "path": "/storage/4403-B0CA/midapp/app/src/main/res/layout/layout_tab_forms.xml",
+                            "category": "برمجيات/أكواد",
+                            "size": "8.2 MB",
+                            "children": []
+                          },
+                          {
+                            "name": "layout_tab_info.xml",
+                            "type": "file",
+                            "path": "/storage/4403-B0CA/midapp/app/src/main/res/layout/layout_tab_info.xml",
+                            "category": "برمجيات/أكواد",
+                            "size": "6.6 MB",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "mipmap-anydpi-v26",
+                        "type": "directory",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/res/mipmap-anydpi-v26",
+                        "category": "مجلد",
+                        "children": [
+                          {
+                            "name": "ic_launcher.xml",
+                            "type": "file",
+                            "path": "/storage/4403-B0CA/midapp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+                            "category": "برمجيات/أكواد",
+                            "size": "344 B",
+                            "children": []
+                          },
+                          {
+                            "name": "ic_launcher_round.xml",
+                            "type": "file",
+                            "path": "/storage/4403-B0CA/midapp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+                            "category": "برمجيات/أكواد",
+                            "size": "344 B",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "mipmap-hdpi",
+                        "type": "directory",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/res/mipmap-hdpi",
+                        "category": "مجلد",
+                        "children": [
+                          {
+                            "name": "ic_launcher.webp",
+                            "type": "file",
+                            "path": "/storage/4403-B0CA/midapp/app/src/main/res/mipmap-hdpi/ic_launcher.webp",
+                            "category": "صورة",
+                            "size": "2.0 MB",
+                            "children": []
+                          },
+                          {
+                            "name": "ic_launcher_round.webp",
+                            "type": "file",
+                            "path": "/storage/4403-B0CA/midapp/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp",
+                            "category": "صورة",
+                            "size": "4.2 MB",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "mipmap-mdpi",
+                        "type": "directory",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/res/mipmap-mdpi",
+                        "category": "مجلد",
+                        "children": [
+                          {
+                            "name": "ic_launcher.webp",
+                            "type": "file",
+                            "path": "/storage/4403-B0CA/midapp/app/src/main/res/mipmap-mdpi/ic_launcher.webp",
+                            "category": "صورة",
+                            "size": "1.5 MB",
+                            "children": []
+                          },
+                          {
+                            "name": "ic_launcher_round.webp",
+                            "type": "file",
+                            "path": "/storage/4403-B0CA/midapp/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp",
+                            "category": "صورة",
+                            "size": "2.6 MB",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "mipmap-xhdpi",
+                        "type": "directory",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/res/mipmap-xhdpi",
+                        "category": "مجلد",
+                        "children": [
+                          {
+                            "name": "ic_launcher.webp",
+                            "type": "file",
+                            "path": "/storage/4403-B0CA/midapp/app/src/main/res/mipmap-xhdpi/ic_launcher.webp",
+                            "category": "صورة",
+                            "size": "2.8 MB",
+                            "children": []
+                          },
+                          {
+                            "name": "ic_launcher_round.webp",
+                            "type": "file",
+                            "path": "/storage/4403-B0CA/midapp/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp",
+                            "category": "صورة",
+                            "size": "5.8 MB",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "mipmap-xxhdpi",
+                        "type": "directory",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/res/mipmap-xxhdpi",
+                        "category": "مجلد",
+                        "children": [
+                          {
+                            "name": "ic_launcher.webp",
+                            "type": "file",
+                            "path": "/storage/4403-B0CA/midapp/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp",
+                            "category": "صورة",
+                            "size": "4.3 MB",
+                            "children": []
+                          },
+                          {
+                            "name": "ic_launcher_round.webp",
+                            "type": "file",
+                            "path": "/storage/4403-B0CA/midapp/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp",
+                            "category": "صورة",
+                            "size": "8.7 MB",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "mipmap-xxxhdpi",
+                        "type": "directory",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/res/mipmap-xxxhdpi",
+                        "category": "مجلد",
+                        "children": [
+                          {
+                            "name": "ic_launcher.webp",
+                            "type": "file",
+                            "path": "/storage/4403-B0CA/midapp/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp",
+                            "category": "صورة",
+                            "size": "5.6 MB",
+                            "children": []
+                          },
+                          {
+                            "name": "ic_launcher_round.webp",
+                            "type": "file",
+                            "path": "/storage/4403-B0CA/midapp/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp",
+                            "category": "صورة",
+                            "size": "11.4 MB",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "values",
+                        "type": "directory",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/res/values",
+                        "category": "مجلد",
+                        "children": [
+                          {
+                            "name": "colors.xml",
+                            "type": "file",
+                            "path": "/storage/4403-B0CA/midapp/app/src/main/res/values/colors.xml",
+                            "category": "برمجيات/أكواد",
+                            "size": "379 B",
+                            "children": []
+                          },
+                          {
+                            "name": "strings.xml",
+                            "type": "file",
+                            "path": "/storage/4403-B0CA/midapp/app/src/main/res/values/strings.xml",
+                            "category": "برمجيات/أكواد",
+                            "size": "107 B",
+                            "children": []
+                          },
+                          {
+                            "name": "themes.xml",
+                            "type": "file",
+                            "path": "/storage/4403-B0CA/midapp/app/src/main/res/values/themes.xml",
+                            "category": "برمجيات/أكواد",
+                            "size": "155 B",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "xml",
+                        "type": "directory",
+                        "path": "/storage/4403-B0CA/midapp/app/src/main/res/xml",
+                        "category": "مجلد",
+                        "children": [
+                          {
+                            "name": "backup_rules.xml",
+                            "type": "file",
+                            "path": "/storage/4403-B0CA/midapp/app/src/main/res/xml/backup_rules.xml",
+                            "category": "برمجيات/أكواد",
+                            "size": "479 B",
+                            "children": []
+                          },
+                          {
+                            "name": "data_extraction_rules.xml",
+                            "type": "file",
+                            "path": "/storage/4403-B0CA/midapp/app/src/main/res/xml/data_extraction_rules.xml",
+                            "category": "برمجيات/أكواد",
+                            "size": "552 B",
+                            "children": []
+                          },
+                          {
+                            "name": "file_paths.xml",
+                            "type": "file",
+                            "path": "/storage/4403-B0CA/midapp/app/src/main/res/xml/file_paths.xml",
+                            "category": "برمجيات/أكواد",
+                            "size": "391 B",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "AndroidManifest.xml",
+                    "type": "file",
+                    "path": "/storage/4403-B0CA/midapp/app/src/main/AndroidManifest.xml",
+                    "category": "برمجيات/أكواد",
+                    "size": "3.6 MB",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "test",
+                "type": "directory",
+                "path": "/storage/4403-B0CA/midapp/app/src/test",
+                "category": "مجلد",
+                "children": [
+                  {
+                    "name": "java",
+                    "type": "directory",
+                    "path": "/storage/4403-B0CA/midapp/app/src/test/java",
+                    "category": "مجلد",
+                    "children": [
+                      {
+                        "name": "com",
+                        "type": "directory",
+                        "path": "/storage/4403-B0CA/midapp/app/src/test/java/com",
+                        "category": "مجلد",
+                        "children": [
+                          {
+                            "name": "example",
+                            "type": "directory",
+                            "path": "/storage/4403-B0CA/midapp/app/src/test/java/com/example",
+                            "category": "مجلد",
+                            "children": [
+                              {
+                                "name": "ExampleRobolectricTest.kt",
+                                "type": "file",
+                                "path": "/storage/4403-B0CA/midapp/app/src/test/java/com/example/ExampleRobolectricTest.kt",
+                                "category": "برمجيات/أكواد",
+                                "size": "622 B",
+                                "children": []
+                              },
+                              {
+                                "name": "ExampleUnitTest.kt",
+                                "type": "file",
+                                "path": "/storage/4403-B0CA/midapp/app/src/test/java/com/example/ExampleUnitTest.kt",
+                                "category": "برمجيات/أكواد",
+                                "size": "325 B",
+                                "children": []
+                              },
+                              {
+                                "name": "GreetingScreenshotTest.kt",
+                                "type": "file",
+                                "path": "/storage/4403-B0CA/midapp/app/src/test/java/com/example/GreetingScreenshotTest.kt",
+                                "category": "برمجيات/أكواد",
+                                "size": "1022 B",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "screenshots",
+                    "type": "directory",
+                    "path": "/storage/4403-B0CA/midapp/app/src/test/screenshots",
+                    "category": "مجلد",
+                    "children": [
+                      {
+                        "name": "greeting.png",
+                        "type": "file",
+                        "path": "/storage/4403-B0CA/midapp/app/src/test/screenshots/greeting.png",
+                        "category": "صورة",
+                        "size": "2.8 MB",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "build.gradle.kts",
+            "type": "file",
+            "path": "/storage/4403-B0CA/midapp/app/build.gradle.kts",
+            "category": "غير معروف",
+            "size": "4.8 MB",
+            "children": []
+          },
+          {
+            "name": "proguard-rules.pro",
+            "type": "file",
+            "path": "/storage/4403-B0CA/midapp/app/proguard-rules.pro",
+            "category": "غير معروف",
+            "size": "751 B",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "assets",
+        "type": "directory",
+        "path": "/storage/4403-B0CA/midapp/assets",
+        "category": "مجلد",
+        "children": [
+          {
+            "name": ".aistudio",
+            "type": "directory",
+            "path": "/storage/4403-B0CA/midapp/assets/.aistudio",
+            "category": "مجلد",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "gradle",
+        "type": "directory",
+        "path": "/storage/4403-B0CA/midapp/gradle",
+        "category": "مجلد",
+        "children": [
+          {
+            "name": "libs.versions.toml",
+            "type": "file",
+            "path": "/storage/4403-B0CA/midapp/gradle/libs.versions.toml",
+            "category": "غير معروف",
+            "size": "7.0 MB",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": ".env.example",
+        "type": "file",
+        "path": "/storage/4403-B0CA/midapp/.env.example",
+        "category": "غير معروف",
+        "size": "249 B",
+        "children": []
+      },
+      {
+        "name": "build.gradle.kts",
+        "type": "file",
+        "path": "/storage/4403-B0CA/midapp/build.gradle.kts",
+        "category": "غير معروف",
+        "size": "355 B",
+        "children": []
+      },
+      {
+        "name": "debug.keystore.base64",
+        "type": "file",
+        "path": "/storage/4403-B0CA/midapp/debug.keystore.base64",
+        "category": "غير معروف",
+        "size": "3.5 MB",
+        "children": []
+      },
+      {
+        "name": "educational_reference_document.html",
+        "type": "file",
+        "path": "/storage/4403-B0CA/midapp/educational_reference_document.html",
+        "category": "مستند",
+        "size": "67.8 MB",
+        "children": []
+      },
+      {
+        "name": "gradle.properties",
+        "type": "file",
+        "path": "/storage/4403-B0CA/midapp/gradle.properties",
+        "category": "غير معروف",
+        "size": "1.4 MB",
+        "children": []
+      },
+      {
+        "name": "metadata.json",
+        "type": "file",
+        "path": "/storage/4403-B0CA/midapp/metadata.json",
+        "category": "مستند",
+        "size": "343 B",
+        "children": []
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "path": "/storage/4403-B0CA/midapp/README.md",
+        "category": "مستند",
+        "size": "951 B",
+        "children": []
+      },
+      {
+        "name": "settings.gradle.kts",
+        "type": "file",
+        "path": "/storage/4403-B0CA/midapp/settings.gradle.kts",
+        "category": "غير معروف",
+        "size": "554 B",
+        "children": []
+      }
+    ]
+  }
+}
