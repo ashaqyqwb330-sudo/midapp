@@ -17,6 +17,14 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           
+      - name: Create debug keystore
+        run: |
+          keytool -genkeypair -v -keystore debug.keystore -alias androiddebugkey \
+          -keyalg RSA -keysize 2048 -validity 10000 \
+          -storepass android -keypass android \
+          -dname "CN=Android Debug,O=Android,C=US"
+        working-directory: ${{ github.workspace }}
+          
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
         

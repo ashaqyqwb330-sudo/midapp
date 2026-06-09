@@ -127,7 +127,6 @@ fun HomeScreen(onNavigate: (String) -> Unit) {
                             )
                         )
                 ) {
-                    // Header Section of the Sidebar
                     Box(
                         modifier = Modifier
                             .fillMaxWidth()
@@ -181,7 +180,6 @@ fun HomeScreen(onNavigate: (String) -> Unit) {
                                     modifier = Modifier.padding(horizontal = 4.dp, vertical = 2.dp)
                                 )
 
-                                // Real-time Simulation lab highlight
                                 Card(
                                     onClick = {
                                         scope.launch { drawerState.close() }
@@ -216,7 +214,6 @@ fun HomeScreen(onNavigate: (String) -> Unit) {
                                     }
                                 }
 
-                                // ===== الخطة الدراسية (مضافة) =====
                                 SidebarServiceRow(
                                     icon = "📅",
                                     title = "الخطة الدراسية",
@@ -228,7 +225,6 @@ fun HomeScreen(onNavigate: (String) -> Unit) {
                                         }
                                     }
                                 )
-                                // ===== نهاية الإضافة =====
 
                                 SidebarServiceRow(
                                     icon = "📚",
@@ -460,7 +456,6 @@ fun HomeScreen(onNavigate: (String) -> Unit) {
                             }
                         }
 
-                        // Section for local offline documents storage cache
                         item {
                             Spacer(modifier = Modifier.height(16.dp))
                             Divider(color = Secondary.copy(alpha = 0.2f), modifier = Modifier.padding(bottom = 12.dp))
@@ -506,8 +501,7 @@ fun HomeScreen(onNavigate: (String) -> Unit) {
                                         Text("📡", fontSize = 18.sp)
                                         Spacer(modifier = Modifier.height(4.dp))
                                         Text(
-                                            text = "لا توجد مستندات مؤقتة حاليًّا.
-تصفّح أي مستند لحفظه تلقائيًّا للميدان.",
+                                            text = "لا توجد مستندات مؤقتة حالياً.\nتصفح أي مستند لحفظه تلقائياً للميدان.",
                                             fontSize = 9.5.sp,
                                             color = TextSecondary,
                                             textAlign = TextAlign.Center,
@@ -574,7 +568,6 @@ fun HomeScreen(onNavigate: (String) -> Unit) {
                         }
                     }
 
-                    // Drawer Footer
                     Box(
                         modifier = Modifier
                             .fillMaxWidth()
@@ -617,7 +610,6 @@ fun HomeScreen(onNavigate: (String) -> Unit) {
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.Center
             ) {
-                // Symmetrical header containing top menu handles and Bismillah
                 Row(
                     modifier = Modifier
                         .fillMaxWidth()
@@ -688,7 +680,7 @@ fun HomeScreen(onNavigate: (String) -> Unit) {
                         )
                         Spacer(modifier = Modifier.height(12.dp))
                         Text(
-                            text = "تطبيق دليل برنامج الطب البشري — ليس دليلًا تقليديًّا، بل مُحفِّزٌ للتميُّز الطبي العسكري!",
+                            text = "تطبيق دليل برنامج الطب البشري — ليس دليلاً تقليدياً، بل مُحفِّزٌ للتميُّز الطبي العسكري!",
                             fontSize = 15.sp,
                             color = TextPrimary,
                             textAlign = TextAlign.Center,
@@ -702,7 +694,6 @@ fun HomeScreen(onNavigate: (String) -> Unit) {
                     }
                 }
                 Spacer(modifier = Modifier.height(24.dp))
-                // Quick navigation cards
                 Column(
                     modifier = Modifier.fillMaxWidth(),
                     verticalArrangement = Arrangement.spacedBy(12.dp)
@@ -771,7 +762,6 @@ fun HomeScreen(onNavigate: (String) -> Unit) {
                             }
                         }
                     }
-                    // ===== بطاقة الخطة الدراسية (مضافة) =====
                     Row(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.spacedBy(12.dp)
@@ -798,10 +788,8 @@ fun HomeScreen(onNavigate: (String) -> Unit) {
                                 )
                             }
                         }
-                        // بطاقة فارغة للتوازن أو يمكن إضافة شيء آخر
                         Spacer(modifier = Modifier.weight(1f))
                     }
-                    // ===== نهاية الإضافة =====
                     Row(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.spacedBy(12.dp)
@@ -940,7 +928,6 @@ fun HomeScreen(onNavigate: (String) -> Unit) {
                             }
                         }
                     }
-
                     Row(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.spacedBy(12.dp)
@@ -978,7 +965,6 @@ fun HomeScreen(onNavigate: (String) -> Unit) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Tactical Biometric & PIN Security controls
                     Row(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.spacedBy(12.dp)
@@ -1087,7 +1073,7 @@ fun HomeScreen(onNavigate: (String) -> Unit) {
                                             showPinChangeDialog = true 
                                         },
                                         colors = ButtonDefaults.buttonColors(containerColor = Secondary.copy(alpha = 0.12f)),
-                                        border = androidx.compose.foundation.BorderStroke(1.dp, Secondary),
+                                        border = BorderStroke(1.dp, Secondary),
                                         shape = RoundedCornerShape(8.dp),
                                         contentPadding = PaddingValues(horizontal = 12.dp, vertical = 6.dp),
                                         modifier = Modifier.height(34.dp)
@@ -1101,7 +1087,6 @@ fun HomeScreen(onNavigate: (String) -> Unit) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Tactical Export Saved Notes & Reports
                     Row(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.spacedBy(12.dp)
@@ -1161,7 +1146,7 @@ fun HomeScreen(onNavigate: (String) -> Unit) {
                                             ExportHelper.triggerExportShare(context, asJson = false)
                                         },
                                         colors = ButtonDefaults.buttonColors(containerColor = Secondary.copy(alpha = 0.15f)),
-                                        border = androidx.compose.foundation.BorderStroke(1.dp, Secondary),
+                                        border = BorderStroke(1.dp, Secondary),
                                         shape = RoundedCornerShape(8.dp),
                                         modifier = Modifier.weight(1f).height(40.dp)
                                     ) {
@@ -1184,7 +1169,6 @@ fun HomeScreen(onNavigate: (String) -> Unit) {
                     }
                 }
 
-                // PIN Change Dialog popup
                 if (showPinChangeDialog) {
                     AlertDialog(
                         onDismissRequest = { showPinChangeDialog = false },
